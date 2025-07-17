@@ -63,8 +63,22 @@ The solution is designed for scientist in environment analysis, who need to coll
 * very low data volume (<1 kB) sent in a flood event
 * 20 km outdoor transfer distance
 * tolerant against inavailability of network or server
+* connection monitoring every 12 h
 
-### Operating Conditions
+
+## Safety and Security Functionality
+
+
+
+## Additional Requirements
+
+
+
+
+# Non-Functional Requirements
+
+
+## Operating Conditions
 
 | Parameter                      | Min.           | Typ.           | Max.          | Unit |
 | :----------------------------- | -------------: | -------------: | ------------: | :--- |
@@ -78,17 +92,13 @@ The solution is designed for scientist in environment analysis, who need to coll
   - long-term hydrolysis stable
   - 15 years lifetime
 
+## Safety Requirements
 
-## Safety and Security Functionality
-
-
-
-## Additional Requirements
+* no toxic substances must be released to the environment/water
 
 
 
 
-# Non-Functional Requirements
 
 ## General Requirements
 
