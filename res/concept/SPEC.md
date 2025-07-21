@@ -26,8 +26,6 @@ This is an open science hardware project, one of four sub projects of teh OSHIE 
 * LoRa: Long Range (wireless connection)
 * WAN: Wide Area Network
 
-
-
 ## Teams and Interfaces
 
 |  Role         | Name            | Contact                        |
@@ -36,8 +34,6 @@ This is an open science hardware project, one of four sub projects of teh OSHIE 
 | product owner | Stefan Helmert  | stefan.helmert@htw-dresden.de  |
 | developer     | Stefan Helmert  | stefan.helmert@htw-dresden.de  |
 | builder       | Stefan Helmert  | stefan.helmert@htw-dresden.de  |
-
-
 
 # Target Concept
 
@@ -108,21 +104,44 @@ The solution is designed for scientist in environment analysis, who need to coll
 
 * no toxic substances must be released to the environment/water
 * safe for animals: no sharp edges, traps or by animals detachable parts
-
-
-
-
+* PELV
 
 ## General Requirements
 
+* transportation
+    - <5kg
+    - < 50cm x 30cm x 20cm
+    - maybe detachable antenna for easier transportation
+
 
 ## Legal Requirements
+
+* relevant regulations
+  - EMVG
+  - FTEG
+  - ElektroG
+  - WEEE
+
+* 868 MHz LoRa SRD communication with duty cycle limitation
 
 ## Additional Requirements
 
 # External Constraints
 
 ## Schedule
+
+| Milestone                     | Date       |
+| :---------------------------- | ---------: |
+| Concept                       | 25.07.2025 |
+| Schematics                    | 08.08.2025 |
+| PCB, mechanical design        | 15.08.2025 |
+| Built up                      | 22.08.2025 |
+| Firmware and client software  | 29.08.2025 |
+| Test                          | 05.09.2025 |
+| Fixes, Documentation          | 12.09.2025 |
+| Ready, published              | 15.09.2025 | 
+
+
 
 ## Budget
 
@@ -137,6 +156,21 @@ The solution is designed for scientist in environment analysis, who need to coll
 | Sum                     | 250.00                        |
 
 ## Problem analysis
+
+* wireless range problem
+  - better antenna design
+  - other band
+  - lower datarate
+
+* battery lifetime
+  - power management circuit (switch off _Arduino_ power source)
+  - increase keep alive interval
+  - bigger battery
+
+* reed switch not working properly
+  - hall sensor
+  - light barrier
+
 
 ## Quality
 
