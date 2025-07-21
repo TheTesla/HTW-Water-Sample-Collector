@@ -22,6 +22,12 @@ This is an open science hardware project, one of four sub projects of teh OSHIE 
 
 ## Appreviations
 
+* IoT: Internet of Things
+* LoRa: Long Range (wireless connection)
+* WAN: Wide Area Network
+
+
+
 ## Teams and Interfaces
 
 |  Role         | Name            | Contact                        |
@@ -68,6 +74,12 @@ The solution is designed for scientist in environment analysis, who need to coll
 
 ## Safety and Security Functionality
 
+* manual power interruption for maintenance: detachable battery, mechanical power switch
+* encrypted, authenticated wireless connection
+* if remote firmware update is required
+  - authenticated update only
+  - update functionality can't be disabled remotely
+
 
 
 ## Additional Requirements
@@ -95,12 +107,14 @@ The solution is designed for scientist in environment analysis, who need to coll
 ## Safety Requirements
 
 * no toxic substances must be released to the environment/water
+* safe for animals: no sharp edges, traps or by animals detachable parts
 
 
 
 
 
 ## General Requirements
+
 
 ## Legal Requirements
 
