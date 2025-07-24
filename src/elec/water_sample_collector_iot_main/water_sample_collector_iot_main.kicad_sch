@@ -173,6 +173,210 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016)
@@ -2003,7 +2207,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N4148"
+		(symbol "Diode:1N4148W"
 			(pin_numbers
 				(hide yes)
 			)
@@ -2021,7 +2225,7 @@
 					)
 				)
 			)
-			(property "Value" "1N4148"
+			(property "Value" "1N4148W"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -2029,7 +2233,16 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2038,16 +2251,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2083,7 +2287,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?35*"
+			(property "ki_fp_filters" "D*SOD?123*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2092,7 +2296,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "1N4148_0_1"
+			(symbol "1N4148W_0_1"
 				(polyline
 					(pts
 						(xy -1.27 1.27) (xy -1.27 -1.27)
@@ -2130,7 +2334,7 @@
 					)
 				)
 			)
-			(symbol "1N4148_1_1"
+			(symbol "1N4148W_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2719,7 +2923,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:BC556"
+		(symbol "Transistor_BJT:BC856"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -2736,7 +2940,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "BC556"
+			(property "Value" "BC856"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -2745,7 +2949,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -2756,7 +2960,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
+			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2766,7 +2970,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.1A Ic, 65V Vce, PNP Small Signal Transistor, TO-92"
+			(property "Description" "0.1A Ic, 65V Vce, PNP Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2775,7 +2979,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "PNP Transistor"
+			(property "ki_keywords" "PNP transistor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2784,7 +2988,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2793,7 +2997,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BC556_0_1"
+			(symbol "BC856_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -2866,7 +3070,7 @@
 					)
 				)
 			)
-			(symbol "BC556_1_1"
+			(symbol "BC856_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2877,7 +3081,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2895,7 +3099,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2913,7 +3117,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4369,6 +4573,12 @@
 		)
 	)
 	(junction
+		(at 157.48 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0078f7d1-e459-46d3-8185-4a61d812f849")
+	)
+	(junction
 		(at 138.43 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4511,6 +4721,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c66f2d3b-4b30-4e68-8098-106b2fa738c0")
+	)
+	(junction
+		(at 157.48 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc1328e8-0cfe-487e-bf97-51aa88f5b586")
 	)
 	(junction
 		(at 87.63 153.67)
@@ -4900,6 +5116,26 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 132.08) (xy 157.48 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39f02a4b-a51f-4105-a8ac-42aa78d50a3f")
+	)
+	(wire
+		(pts
+			(xy 254 74.93) (xy 254 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ace02e5-82ce-4420-84f8-c2285c159456")
+	)
+	(wire
+		(pts
 			(xy 138.43 66.04) (xy 138.43 69.85)
 		)
 		(stroke
@@ -5277,6 +5513,16 @@
 			(type default)
 		)
 		(uuid "7300d30b-c79e-4eb5-a307-ea146a0c2aae")
+	)
+	(wire
+		(pts
+			(xy 151.13 129.54) (xy 157.48 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "731f3e94-646b-463a-b186-575328020e0e")
 	)
 	(wire
 		(pts
@@ -6110,6 +6356,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 76.2) (xy 255.27 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f28e5669-ae7a-4832-9e86-6c2af3ca4b86")
+	)
+	(wire
+		(pts
 			(xy 132.08 86.36) (xy 138.43 86.36)
 		)
 		(stroke
@@ -6436,7 +6692,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 89.408 147.32 90)
 			(effects
 				(font
@@ -6473,76 +6729,6 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 113.03 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0390a359-d2d3-4808-a8da-42a6806f3830")
-		(property "Reference" "C9"
-			(at 116.84 93.0909 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 116.84 95.6309 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.9952 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 113.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 113.03 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "564c5517-a963-45d7-a89b-7522e1845777")
-		)
-		(pin "2"
-			(uuid "4c8f74d3-935e-4cb2-a1dc-07ff40ba787e")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6608,6 +6794,162 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 242.57 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "059688b5-27bc-41be-ad10-190a54ac53da")
+		(property "Reference" "D6"
+			(at 242.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 242.57 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 242.57 74.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "687458cb-4595-4da3-816d-093aeac2826c")
+		)
+		(pin "1"
+			(uuid "d37be45c-9609-4640-9f2d-50498edcf632")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 113.03 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0892bbfb-f900-4a2f-b0f7-51ae195b0e46")
+		(property "Reference" "C9"
+			(at 116.84 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 116.84 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 113.9952 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "233e41e2-7067-4f7d-b232-88467bebf4d9")
+		)
+		(pin "1"
+			(uuid "ac622669-6600-4c41-9c7c-f22f85f9a4c8")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -6970,7 +7312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 85.09 166.37 0)
 			(effects
 				(font
@@ -7123,7 +7465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 75.8952 151.13 0)
 			(effects
 				(font
@@ -7259,7 +7601,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 108.9152 38.1 0)
 			(effects
 				(font
@@ -7268,7 +7610,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/B300/VEC3R0335QG.pdf"
 			(at 107.95 34.29 0)
 			(effects
 				(font
@@ -7277,7 +7619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor"
+		(property "Description" "VINATECH Supercap"
 			(at 107.95 34.29 0)
 			(effects
 				(font
@@ -7327,7 +7669,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 74.93 36.068 90)
 			(effects
 				(font
@@ -7370,76 +7712,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 107.95 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "272516a5-95f1-48db-ad83-1dd34ebb4cc7")
-		(property "Reference" "C12"
-			(at 111.76 41.0209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3.3"
-			(at 111.76 43.5609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 108.9152 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 107.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df8f8a11-763f-49f9-8448-e75f827f79f2")
-		)
-		(pin "2"
-			(uuid "93b38598-36e1-434f-87c1-393f7301f740")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 50.8 133.35 180)
 		(unit 1)
@@ -7467,7 +7739,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 52.578 133.35 90)
 			(effects
 				(font
@@ -7527,7 +7799,7 @@
 				)
 			)
 		)
-		(property "Value" "DMP3099L"
+		(property "Value" "DMP3098L"
 			(at 43.18 24.13 90)
 			(effects
 				(font
@@ -7546,7 +7818,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP3099L.pdf"
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMP3098L.pdf"
 			(at 46.99 25.4 0)
 			(effects
 				(font
@@ -7667,7 +7939,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6p8"
+		(property "Value" "15p"
 			(at 113.03 176.5362 0)
 			(effects
 				(font
@@ -7676,7 +7948,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 110.49 175.26 0)
 			(effects
 				(font
@@ -7713,6 +7985,74 @@
 			(project ""
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 146.05 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33cf0a28-9519-437c-b810-5b07009491b1")
+		(property "Reference" "J7"
+			(at 146.685 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 146.685 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 146.05 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 146.05 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0609d58e-159c-47c1-9c47-447e0405157e")
+		)
+		(pin "2"
+			(uuid "fbe736f2-ff38-4d62-b177-a1d36dd595ba")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -7785,76 +8125,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 260.35 81.28 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41d1a898-c095-49e7-bbab-ca72a982334b")
-		(property "Reference" "J1"
-			(at 261.62 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 261.62 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 260.35 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "905ad6f7-ec94-4e68-87c0-3e885e1e7cf0")
-		)
-		(pin "1"
-			(uuid "f19d3feb-ad6d-4712-bde6-b62e4031ed4f")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x05_Pin")
 		(at 229.87 91.44 180)
 		(unit 1)
@@ -7882,7 +8152,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical"
 			(at 229.87 91.44 0)
 			(effects
 				(font
@@ -8091,7 +8361,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 130.81 104.14 0)
 			(effects
 				(font
@@ -8232,7 +8502,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 30.1752 99.06 0)
 			(effects
 				(font
@@ -8275,6 +8545,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 107.95 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5860c4e4-d408-4ebe-aabe-5bf3030a9a35")
+		(property "Reference" "C12"
+			(at 111.76 41.0209 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.3"
+			(at 111.76 43.5609 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
+			(at 108.9152 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-reichelt.de/documents/datenblatt/B300/VEC3R0335QG.pdf"
+			(at 107.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "VINATECH Supercap"
+			(at 107.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42fd4e9a-7ee4-4483-ad8d-c68966e21338")
+		)
+		(pin "2"
+			(uuid "8f5f3847-e7d4-4fd8-b021-a839d835aa71")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 260.35 106.68 0)
 		(mirror y)
@@ -8301,7 +8641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 260.35 106.68 0)
 			(effects
 				(font
@@ -8377,7 +8717,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 140.208 73.66 90)
 			(effects
 				(font
@@ -8504,7 +8844,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "68"
+		(property "Value" "330"
 			(at 135.89 162.5599 0)
 			(effects
 				(font
@@ -8513,7 +8853,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 135.128 161.29 90)
 			(effects
 				(font
@@ -8550,6 +8890,252 @@
 			(project ""
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 19.05 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b883885-4a5c-46f1-a6ff-78145c48e9b7")
+		(property "Reference" "C8"
+			(at 22.86 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 22.86 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 20.0152 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e188c350-c008-4648-a619-1bed7f93440e")
+		)
+		(pin "1"
+			(uuid "faa75a99-0f58-4979-b64d-67d36fd6f07f")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 87.63 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ec2c111-b4e3-443a-97b6-b86a26c25007")
+		(property "Reference" "D4"
+			(at 90.17 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 90.17 134.6199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 92.075 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "45452e99-99fb-49bb-9d4d-4e7afdbdff05")
+		)
+		(pin "1"
+			(uuid "1040cefc-a5cc-4f98-9252-0d61de792c16")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 251.46 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f7eac8b-fd54-44b6-b4e2-6c9ea83df481")
+		(property "Reference" "D5"
+			(at 254 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 254 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 255.905 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4bdd499c-117b-4a68-918d-f2b337135be0")
+		)
+		(pin "1"
+			(uuid "7d5b8a2d-2dd9-4a3c-831d-11238a6d09f3")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -8752,76 +9338,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 19.05 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73b2e804-defe-44a9-9a35-54df3c47b448")
-		(property "Reference" "C8"
-			(at 22.86 93.0909 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 22.86 95.6309 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 20.0152 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 19.05 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43a99290-5d6c-4027-9e16-ef9015feb5e5")
-		)
-		(pin "2"
-			(uuid "dd9927ff-98c3-4a04-ac4f-126e0c35da85")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 121.92 175.26 0)
 		(unit 1)
@@ -8849,7 +9365,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 122.8852 179.07 0)
 			(effects
 				(font
@@ -8892,81 +9408,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:DMP3099L")
-		(at 97.79 30.48 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "765602a3-d277-44f4-8398-3f043fe712eb")
-		(property "Reference" "Q2"
-			(at 97.79 21.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "DMP3099L"
-			(at 97.79 24.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 95.885 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMP3099L.pdf"
-			(at 93.98 25.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "-3.8A Id, -30V Vds, P-Channel MOSFET, SOT-23"
-			(at 97.79 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7a6d5ffb-4689-4ad2-a9b5-9318b3a54ceb")
-		)
-		(pin "3"
-			(uuid "8b25a5ff-17a2-4c6a-b486-a293ae849261")
-		)
-		(pin "2"
-			(uuid "a1d43325-0fe3-4ef4-b999-40faf48b5b67")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Crystal_Small")
 		(at 104.14 168.91 0)
 		(unit 1)
@@ -8992,7 +9433,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC4V-T1A-2Pin_5.0x1.9mm"
 			(at 104.14 168.91 0)
 			(effects
 				(font
@@ -9010,7 +9451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Two pin crystal, small symbol"
+		(property "Description" "CC4V-T1A 32,768KHZ 9PF"
 			(at 104.14 168.91 0)
 			(effects
 				(font
@@ -9095,6 +9536,83 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:BC856")
+		(at 85.09 34.29 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7de03d05-bbda-4759-89e4-4c475aba58a9")
+		(property "Reference" "Q4"
+			(at 90.17 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BC856"
+			(at 90.17 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 90.17 32.385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC860-D.pdf"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.1A Ic, 65V Vce, PNP Transistor, SOT-23"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d935546f-eb9d-4e2f-91cd-1a9b32c9a347")
+		)
+		(pin "2"
+			(uuid "8cd9b013-1cad-4073-9b00-66a4bdcf2496")
+		)
+		(pin "3"
+			(uuid "ac84f791-6de9-43df-bf92-5a8a0fa7ed4a")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -9299,6 +9817,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 260.35 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a986b52-15d3-40d6-9b24-dce030d4936c")
+		(property "Reference" "J8"
+			(at 261.62 77.4699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 261.62 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 260.35 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 260.35 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "738fcca0-e4a2-4d48-b82d-4df0ec4c3e63")
+		)
+		(pin "1"
+			(uuid "49b77c48-2e35-490e-b72d-117cf3a802c5")
+		)
+		(pin "3"
+			(uuid "3ad0fad6-ff93-4fbb-8e95-ca9be1b3c986")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 228.6 78.74 90)
 		(unit 1)
@@ -9324,7 +9915,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 228.6 80.518 90)
 			(effects
 				(font
@@ -9499,94 +10090,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
-		(at 87.63 133.35 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "941b678b-912d-45ea-b03b-4db0f44bfec1")
-		(property "Reference" "D1"
-			(at 90.17 132.0799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 90.17 134.6199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 87.63 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 87.63 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 87.63 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 87.63 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 87.63 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "485952d5-5594-459a-92dd-005217b03bd9")
-		)
-		(pin "1"
-			(uuid "320d95fb-763e-43e8-8977-7ed8bf1af197")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 147.32 73.66 180)
 		(unit 1)
@@ -9614,7 +10117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 149.098 73.66 90)
 			(effects
 				(font
@@ -9816,7 +10319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 93.218 91.44 90)
 			(effects
 				(font
@@ -9884,7 +10387,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 64.77 36.068 90)
 			(effects
 				(font
@@ -10023,7 +10526,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 236.728 71.12 90)
 			(effects
 				(font
@@ -10066,6 +10569,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 52.07 34.29 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0bf9d30-27a9-4942-b0ab-7e5db9c44b82")
+		(property "Reference" "D3"
+			(at 54.61 33.0199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 54.61 35.5599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 47.625 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 52.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 52.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 52.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 52.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9cbfc81a-0839-4602-a302-806cd87444ca")
+		)
+		(pin "1"
+			(uuid "fd55718c-2e9d-4fad-866f-b536d4ef712e")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 43.18 168.91 90)
 		(unit 1)
@@ -10091,7 +10682,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 43.18 170.688 90)
 			(effects
 				(font
@@ -10134,6 +10725,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V8")
+		(at 254 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b40659e2-11e1-4e69-897c-22003c1e7868")
+		(property "Reference" "#PWR033"
+			(at 254 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V8"
+			(at 254 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 254 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V8\""
+			(at 254 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48bc7ae5-6631-48fc-bdbc-1481864a7562")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
 		(at 157.48 71.12 0)
 		(unit 1)
@@ -10159,7 +10816,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 157.48 71.12 0)
 			(effects
 				(font
@@ -10379,7 +11036,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 101.2952 99.06 0)
 			(effects
 				(font
@@ -10416,6 +11073,80 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:DMP3099L")
+		(at 97.79 30.48 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b95bda5f-74bf-4d64-a565-fb7755da4c06")
+		(property "Reference" "Q2"
+			(at 97.79 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "DMP3098L"
+			(at 97.79 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 95.885 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/datasheet/download/DMP3098L.pdf"
+			(at 93.98 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "-3.8A Id, -30V Vds, P-Channel MOSFET, SOT-23"
+			(at 97.79 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e059636-1484-4c7b-9b5e-d61de761f19d")
+		)
+		(pin "3"
+			(uuid "e447a7a6-2495-4d24-8c0f-5148211ad4d8")
+		)
+		(pin "2"
+			(uuid "2bee6290-30d7-4108-8d2a-25337e8ea18a")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -10487,94 +11218,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
-		(at 251.46 69.85 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c60f6d86-ba22-4bbf-97ea-ed86bdd00b8e")
-		(property "Reference" "D5"
-			(at 254 68.5799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 254 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 251.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 251.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 251.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 251.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 251.46 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "774317d1-4cab-476a-88ab-3d0a24319b2c")
-		)
-		(pin "1"
-			(uuid "66fb38ec-4097-48e9-9963-9b8fb25d329d")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 63.5 100.33 0)
 		(unit 1)
@@ -10601,7 +11244,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 64.4652 104.14 0)
 			(effects
 				(font
@@ -10669,7 +11312,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 160.02 104.14 0)
 			(effects
 				(font
@@ -10757,7 +11400,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 21.59 42.926 90)
 			(effects
 				(font
@@ -10827,7 +11470,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 93.218 101.6 90)
 			(effects
 				(font
@@ -10870,92 +11513,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4148")
-		(at 242.57 78.74 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4a2c659-1783-4123-8b62-53e9cd6171a0")
-		(property "Reference" "D4"
-			(at 242.57 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 242.57 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 242.57 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 242.57 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 242.57 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 242.57 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 242.57 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "565d4aa2-38c4-473e-86ab-397f1ca14f81")
-		)
-		(pin "1"
-			(uuid "86ea4a76-a46e-4632-861d-9f9b6d683a9d")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 99.06 175.26 0)
 		(unit 1)
@@ -10974,7 +11531,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "6p8"
+		(property "Value" "12p"
 			(at 101.6 176.5362 0)
 			(effects
 				(font
@@ -10983,7 +11540,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 99.06 175.26 0)
 			(effects
 				(font
@@ -11051,7 +11608,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 54.61 93.218 90)
 			(effects
 				(font
@@ -11119,7 +11676,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_arduino-library:Arduino_MKR_FOX_1200_Socket"
+		(property "Footprint" "arduino-library:Arduino_MKR_FOX_1200_Socket"
 			(at 195.58 143.51 0)
 			(effects
 				(font
@@ -11267,7 +11824,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 76.708 133.35 90)
 			(effects
 				(font
@@ -11337,7 +11894,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D14.0mm_P5.00mm"
 			(at 134.3152 179.07 0)
 			(effects
 				(font
@@ -11374,171 +11931,6 @@
 			(project ""
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4148")
-		(at 52.07 34.29 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e9bd00fe-44a5-4c1c-9be7-40847c8d7138")
-		(property "Reference" "D3"
-			(at 54.61 33.0199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N4148"
-			(at 54.61 35.5599 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 52.07 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5d742b54-20c0-4e2c-8476-06374d29c11e")
-		)
-		(pin "1"
-			(uuid "64b3b365-99a4-463f-a00a-dd403a4584d4")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:BC556")
-		(at 85.09 34.29 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee837635-cf2a-4c06-99a2-aa6e19b9183d")
-		(property "Reference" "Q3"
-			(at 90.17 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BC556"
-			(at 90.17 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 90.17 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BC556BTA-D.pdf"
-			(at 85.09 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.1A Ic, 65V Vce, PNP Small Signal Transistor, TO-92"
-			(at 85.09 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "297df5a6-5f83-4d91-9816-862bfdc7c53a")
-		)
-		(pin "2"
-			(uuid "0c367c13-17d1-4d09-8c6c-af3e6aed8220")
-		)
-		(pin "3"
-			(uuid "ab3fcc1e-5dc0-4f2b-be69-85440b181811")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -11769,7 +12161,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 44.958 45.72 90)
 			(effects
 				(font
