@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "Water Sample Collector IoT main pcb")
+		(date "2025-07-29")
+		(rev "0.1")
+		(company "HTW Dresden")
+		(comment 4 "AISLER Project ID: WXQEBWVR")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
