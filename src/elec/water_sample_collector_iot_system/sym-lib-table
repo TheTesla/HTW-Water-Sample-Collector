@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "wsciot")(type "KiCad")(uri "${KIPRJMOD}/wsciot.kicad_sym")(options "")(descr ""))
+)
