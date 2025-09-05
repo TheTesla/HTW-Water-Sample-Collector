@@ -7,6 +7,7 @@
 	(title_block
 		(title "Water Sample Collector LoRa IoT")
 		(date "2025-07-23")
+		(rev "0.2")
 		(company "HTW Dresden")
 	)
 	(lib_symbols
@@ -7781,7 +7782,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 242.57 78.74 180)
+		(at 242.57 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7806,7 +7807,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 242.57 74.295 0)
+			(at 242.57 83.185 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9792,72 +9793,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
-		(at 234.95 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ebde4e1-9c3d-47f0-993e-77df78ec339a")
-		(property "Reference" "#PWR025"
-			(at 234.95 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 234.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 234.95 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4bb9d065-2740-4e99-82f3-603811973d65")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 163.83 111.76 90)
 		(unit 1)
@@ -11193,7 +11128,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148W")
-		(at 251.46 66.04 90)
+		(at 251.46 66.04 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11207,7 +11142,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "1N4148W"
@@ -11216,11 +11151,11 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 255.905 66.04 0)
+			(at 247.015 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13227,6 +13162,71 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 234.95 66.04 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a02999ee-5778-41d0-9304-547186889652")
+		(property "Reference" "#PWR047"
+			(at 234.95 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.442 61.976 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 234.95 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a8a766a5-8d63-4ead-9d22-9dfef3525fce")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)

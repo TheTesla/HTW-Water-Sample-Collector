@@ -7,7 +7,7 @@
 	(title_block
 		(title "Wiring of the water sample collector IoT system")
 		(date "2025-09-05")
-		(rev "0.1")
+		(rev "0.2")
 		(company "HTW Dresden")
 	)
 	(lib_symbols
@@ -1367,9 +1367,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Start if circuit is opened"
+	(text "Start if circuit is closed"
 		(exclude_from_sim no)
-		(at 174.498 100.838 0)
+		(at 173.736 103.124 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1389,7 +1389,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 95.25) (xy 179.07 95.25)
+			(xy 176.53 97.79) (xy 179.07 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1419,7 +1419,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 95.25) (xy 179.07 97.79)
+			(xy 179.07 97.79) (xy 179.07 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1439,7 +1439,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 95.25) (xy 166.37 95.25)
+			(xy 156.21 97.79) (xy 166.37 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1459,7 +1459,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 97.79) (xy 156.21 97.79)
+			(xy 179.07 100.33) (xy 156.21 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1707,7 +1707,7 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_Reed")
-		(at 171.45 95.25 0)
+		(at 171.45 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1716,14 +1716,6 @@
 		(fields_autoplaced yes)
 		(uuid "f61174c1-70ca-448c-be36-76bcb6fd0c82")
 		(property "Reference" "SW1"
-			(at 171.45 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Reed"
 			(at 171.45 91.44 0)
 			(effects
 				(font
@@ -1731,8 +1723,16 @@
 				)
 			)
 		)
+		(property "Value" "SW_Reed"
+			(at 171.45 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Footprint" ""
-			(at 171.45 95.25 0)
+			(at 171.45 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +1741,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 95.25 0)
+			(at 171.45 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +1750,7 @@
 			)
 		)
 		(property "Description" "reed switch"
-			(at 171.45 95.25 0)
+			(at 171.45 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
