@@ -13093,15 +13093,15 @@
 			(uuid "5541393b-c4bb-48e4-9495-7a33e6d48518")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D14.0mm_P5.00mm.wrl"
+		(model "${KICAD9_3DMODEL_DIR}/Battery.3dshapes/Battery_CR1225.wrl"
 			(offset
-				(xyz 0 0 0)
+				(xyz 2.5 0 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
