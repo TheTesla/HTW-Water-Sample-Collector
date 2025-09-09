@@ -68,3 +68,19 @@ The following files are the most important subset needed to build and use the me
 Stefan Helmert <stefan.helmert@htw-dresden.de>
 
 
+## Appendix
+
+### Minimal setup wiring
+
+Following components are needed:
+
+* 1 main board
+* 1 Li-SOCl<sub>2</sub> battery
+* 1 antenna for 868 MHz
+* 1 antenna cable/pigtail
+* 1 reed switch
+
+
+![Photo: minimal setup wiring of the OSH water sample collector IoT system](doc/media/wiring.png)
+
+
