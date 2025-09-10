@@ -23,10 +23,7 @@ SMTP_USER = creds.get("SMTP_USER")
 SMTP_PASSWORD = creds.get("SMTP_PASSWORD")
 
 def filter_msg(payload):
-    # Beispiel: Nur weiterleiten, wenn Temperatur > 30
-    # data = json.loads(payload)
-    # return data.get("temperature", 0) > 30
-    return True  # Aktuell: alles weiterleiten
+    return True
 
 def build_msg(payload):
     data = json.loads(payload)
@@ -36,8 +33,8 @@ def build_msg(payload):
     up_msg = data.get("uplink_message")
     frm_payload = up_msg.get("frm_payload")
     dec_payload = base64.b64decode(frm_payload).decode("utf-8")
-    subject = f"[IoT msg] {dev_id} {dec_payload[:8]}"
-    body = f"date: {recv_at}\nmsg: {dec_payload}"
+    subject = f"[IoT msg] {dec_payload[:32]}"
+    body = f"device: {dev_id}\ndate: {recv_at}\nmsg: {dec_payload}"
     return {"subject": subject, "body": body}
 
 def send_email(betreff, text):
