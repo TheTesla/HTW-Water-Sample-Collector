@@ -51,7 +51,7 @@ void setup() {
 }
 
 void loop() {
-  String msg = "Hello LoRa";
+  String msg = "Probensammler W1 ist voll";
 
 
   int err;
