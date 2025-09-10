@@ -1,0 +1,19 @@
+[project]
+name = "wsciot"
+version = "0.0.1"
+description = "Msg forwarding server for the water sample collector iot sensor"
+authors = [
+    {name = "Stefan Helmert"}
+]
+license = {text = "AGPLv3"}
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "paho-mqtt (>=2.1.0,<3.0.0)",
+    "dotenv"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

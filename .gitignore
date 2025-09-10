@@ -1,3 +1,6 @@
 arduino_secrets.h
 *backup*
 *cache*
+.env
+__pycache__/
+dist/
