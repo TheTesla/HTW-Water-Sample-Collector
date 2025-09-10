@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2025 Stefan Helmert
+//
+// SPDX-License-Identifier: AGPL-3.0
+
 /*
   Lora Check connection for Iot
   This sketch checks LoRa avability for MKR WAN 1300/1310 LoRa module.

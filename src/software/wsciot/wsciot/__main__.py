@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+# SPDX-FileCopyrightText: 2025 Stefan Helmert
+#
+# SPDX-License-Identifier: AGPL-3.0
+
 import json
 import smtplib
 from email.mime.text import MIMEText
