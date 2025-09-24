@@ -1,0 +1,19 @@
+[project]
+name = "wsciot-mountingframe"
+version = "0.0.1"
+description = "Mounting frame for PCB, antenna and battery"
+authors = [
+    {name = "Stefan Helmert",email = "stefan.helmert@htw-dresden.de"}
+]
+license = {text = "CERN-OHL-1.2"}
+readme = "README.md"
+requires-python = ">=3.11, <4.0"
+dependencies = [
+    "xyzcad (>=0.7.1,<0.8.0)",
+    "fuzzyometry (>=0.0.6,<0.0.7)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
