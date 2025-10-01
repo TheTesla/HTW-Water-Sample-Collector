@@ -188,31 +188,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Reed"
+		(symbol "Device:C_Polarized_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 2.54 0)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "SW_Reed"
-				(at 0 -2.54 0)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -233,7 +235,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "reed switch"
+			(property "Description" "Polarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -242,7 +244,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "reed magnetic switch"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -251,10 +253,41 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_Reed_0_0"
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_Small_0_1"
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
 				(polyline
 					(pts
-						(xy -2.54 0) (xy 1.27 0.762)
+						(xy -1.27 1.524) (xy -0.762 1.524)
 					)
 					(stroke
 						(width 0)
@@ -266,55 +299,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.159 -1.397) (xy 2.286 -1.397)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.159 -1.397)
-					(mid -3.55 0)
-					(end -2.159 1.397)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.159 1.397)
-					(mid 3.55 0)
-					(end 2.159 -1.397)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.159 1.397) (xy -2.159 1.397)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 0) (xy -1.27 -0.762)
+						(xy -1.016 1.27) (xy -1.016 1.778)
 					)
 					(stroke
 						(width 0)
@@ -325,11 +310,11 @@
 					)
 				)
 			)
-			(symbol "SW_Reed_1_1"
+			(symbol "C_Polarized_Small_1_1"
 				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -345,9 +330,9 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
+					(at 0 -2.54 90)
+					(length 1.8542)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -365,7 +350,301 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "wsciot:Main_PCB_WSC_IoT"
+		(symbol "Device:R_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Diode:1N4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Main_PCB_WSC_IoT_1"
 			(pin_names
 				(offset 1.016)
 			)
@@ -433,7 +712,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Main_PCB_WSC_IoT_0_0"
+			(symbol "Main_PCB_WSC_IoT_1_0_0"
 				(rectangle
 					(start -17.78 48.26)
 					(end 17.78 -19.05)
@@ -686,7 +965,7 @@
 					)
 				)
 			)
-			(symbol "Main_PCB_WSC_IoT_0_1"
+			(symbol "Main_PCB_WSC_IoT_1_0_1"
 				(polyline
 					(pts
 						(xy 7.62 21.59) (xy 6.35 21.59)
@@ -700,7 +979,7 @@
 					)
 				)
 			)
-			(symbol "Main_PCB_WSC_IoT_1_0"
+			(symbol "Main_PCB_WSC_IoT_1_1_0"
 				(polyline
 					(pts
 						(xy 8.89 25.4) (xy 7.62 25.4) (xy 7.62 17.78) (xy 11.43 17.78)
@@ -714,7 +993,7 @@
 					)
 				)
 			)
-			(symbol "Main_PCB_WSC_IoT_1_1"
+			(symbol "Main_PCB_WSC_IoT_1_1_1"
 				(text "Analog (J5)\n"
 					(at -5.08 27.94 900)
 					(effects
@@ -1276,14 +1555,14 @@
 				(pin bidirectional line
 					(at 25.4 13.97 180)
 					(length 7.62)
-					(name "D6"
+					(name "D7"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "D6"
+					(number "D7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1294,14 +1573,14 @@
 				(pin bidirectional line
 					(at 25.4 11.43 180)
 					(length 7.62)
-					(name "D7"
+					(name "D6"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "D7"
+					(number "D6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1330,7 +1609,7 @@
 				(pin input line
 					(at 25.4 5.08 180)
 					(length 7.62)
-					(name "Signal"
+					(name "Wake/D0"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1366,10 +1645,187 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Reed"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_Reed"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "reed switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "reed magnetic switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Reed_0_0"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 1.27 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.159 -1.397) (xy 2.286 -1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 -1.397)
+					(mid -3.55 0)
+					(end -2.159 1.397)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 2.159 1.397)
+					(mid 3.55 0)
+					(end 2.159 -1.397)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.159 1.397) (xy -2.159 1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy -1.27 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_Reed_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Start if circuit is closed"
 		(exclude_from_sim no)
-		(at 173.736 103.124 0)
+		(at 188.722 78.486 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1387,15 +1843,57 @@
 		)
 		(uuid "ea74a269-dbc5-4427-8b84-1c25135e9e9a")
 	)
+	(junction
+		(at 172.72 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "949bbe22-358d-4d6b-a7b7-2bbb2292ce87")
+	)
+	(junction
+		(at 168.91 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed4f4f05-f614-4698-82fd-41ab7e66c27c")
+	)
 	(wire
 		(pts
-			(xy 176.53 97.79) (xy 179.07 97.79)
+			(xy 165.1 95.25) (xy 168.91 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03d2c2f5-bf6d-44d8-a440-ac01de7d3627")
+	)
+	(wire
+		(pts
+			(xy 195.58 88.9) (xy 199.39 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "1bdbe3e2-a61e-4d1d-8ccc-ad4a8c121800")
+	)
+	(wire
+		(pts
+			(xy 181.61 100.33) (xy 199.39 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39b09369-69e9-4eb9-8773-7d1ae035e94b")
+	)
+	(wire
+		(pts
+			(xy 156.21 100.33) (xy 176.53 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40ccc321-6991-41ea-8879-c3e189883ef6")
 	)
 	(polyline
 		(pts
@@ -1409,6 +1907,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 88.9) (xy 185.42 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a0b0ff-a061-4555-816b-f9965e83c148")
+	)
+	(wire
+		(pts
 			(xy 140.97 148.59) (xy 138.43 148.59)
 		)
 		(stroke
@@ -1419,7 +1927,27 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 97.79) (xy 179.07 100.33)
+			(xy 168.91 95.25) (xy 168.91 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5fcad3-899d-4606-ad0b-3dd97c304d63")
+	)
+	(wire
+		(pts
+			(xy 172.72 88.9) (xy 176.53 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96436cdd-37e4-4db8-b52c-6d846ce41e4c")
+	)
+	(wire
+		(pts
+			(xy 199.39 88.9) (xy 199.39 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1439,13 +1967,43 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 97.79) (xy 166.37 97.79)
+			(xy 156.21 88.9) (xy 158.75 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a73722-1b8d-4735-8057-87001239bcfe")
+	)
+	(wire
+		(pts
+			(xy 163.83 88.9) (xy 172.72 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a784b5bf-4ee4-4b39-80ae-01c117137072")
+	)
+	(wire
+		(pts
+			(xy 156.21 97.79) (xy 168.91 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ac1f7453-4ef3-4df7-8ff1-56c803e91754")
+	)
+	(wire
+		(pts
+			(xy 168.91 97.79) (xy 172.72 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae72d3f5-cbff-4d2f-9f29-000aacec36a6")
 	)
 	(wire
 		(pts
@@ -1459,13 +2017,33 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 100.33) (xy 156.21 100.33)
+			(xy 156.21 95.25) (xy 157.48 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c8517ea6-0803-4c7f-b3b6-a1d7e3ec33f1")
+		(uuid "dc13dad4-3a07-4763-8c13-6d7a3bbd1f96")
+	)
+	(wire
+		(pts
+			(xy 172.72 95.25) (xy 172.72 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2fb6b7a-b733-46f1-b1d2-8d62ff4da3f4")
+	)
+	(wire
+		(pts
+			(xy 172.72 88.9) (xy 172.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0401643-e1ca-47f9-bf45-d73a24b022c9")
 	)
 	(wire
 		(pts
@@ -1478,51 +2056,32 @@
 		(uuid "f7aad9b2-0602-4ac6-81e9-9528b23bda1d")
 	)
 	(symbol
-		(lib_id "wsciot:Main_PCB_WSC_IoT")
-		(at 130.81 102.87 0)
+		(lib_id "Device:R_Small")
+		(at 179.07 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c942b5c-db92-4c64-94ae-3529ab166a85")
-		(property "Reference" "A1"
-			(at 130.81 49.53 0)
+		(uuid "37e55402-8dc6-4541-ba72-25321d8ff1e7")
+		(property "Reference" "R2"
+			(at 177.038 102.616 90)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Main_PCB_WSC_IoT"
-			(at 130.81 52.07 0)
+		(property "Value" "10k"
+			(at 180.848 102.616 90)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Main_PCB_WSC_IoT:Main_PCB_WSC_IoT"
-			(at 130.81 162.306 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://iversion.informatik.htw-dresden.de/smartproductionsystems/projects/oshie/htw-water-sample-collector"
-			(at 130.81 159.004 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Main PCB for water sample collector"
-			(at 131.572 85.852 0)
+		(property "Footprint" ""
+			(at 179.07 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,106 +2089,168 @@
 				(hide yes)
 			)
 		)
-		(pin "A1"
-			(uuid "eb064e3c-d66b-4898-84b5-0109ab83464f")
+		(property "Datasheet" "~"
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "+3.3VP"
-			(uuid "0c60b7f9-35ef-4fa3-b632-abd043443d60")
+		(property "Description" "Resistor, small symbol"
+			(at 179.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "D2"
-			(uuid "98fda511-983c-45b1-9cf4-b1747deb365c")
+		(pin "1"
+			(uuid "88e82543-df74-4766-b8d6-c83875dd2cd4")
 		)
-		(pin "GND"
-			(uuid "054c8842-5c75-42ec-917f-ffdca93f7e3e")
+		(pin "2"
+			(uuid "836784d0-2416-4e96-8d9e-e35895099eba")
 		)
-		(pin "GND"
-			(uuid "501dfa6d-fcf9-4b7c-bfd5-598365d2acc5")
+		(instances
+			(project "water_sample_collector_iot_system"
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "R2")
+					(unit 1)
+				)
+			)
 		)
-		(pin "GND"
-			(uuid "bbb8aeae-4dd3-4104-ac11-cac91f39613a")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 179.07 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "48efd95a-db26-4802-ba33-96aedf350931")
+		(property "Reference" "R1"
+			(at 177.292 87.122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "A5"
-			(uuid "bf8d1a2b-63d5-4bf6-ae56-b224912b0c2b")
+		(property "Value" "10k"
+			(at 181.102 87.122 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "AREF"
-			(uuid "58268766-5cbf-465a-9a05-503ad70c8228")
+		(property "Footprint" ""
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "A6"
-			(uuid "0ef16dde-fd00-4c53-ac34-d1fef16faf1f")
+		(property "Datasheet" "~"
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "A4"
-			(uuid "7c9e356c-9369-4451-99b6-0f4330a80588")
+		(property "Description" "Resistor, small symbol"
+			(at 179.07 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "+3.3VP"
-			(uuid "f7131bce-15bf-4887-8294-9f6711a91142")
+		(pin "1"
+			(uuid "3c459afd-8160-49a7-9f79-32862998e479")
 		)
-		(pin "S"
-			(uuid "cbca8d69-bf44-4c6e-8610-10c4f847c5b8")
-		)
-		(pin "D12"
-			(uuid "6113cc84-71ec-4ddc-89e6-ac4a7995e399")
-		)
-		(pin "D1"
-			(uuid "6736d2bc-93b3-4a4d-88bf-d7def5c07d87")
-		)
-		(pin "+3.3VP"
-			(uuid "b6f6db49-6bf6-4f70-874f-e38c0892056c")
-		)
-		(pin "GND"
-			(uuid "78b5866c-c166-44c0-af7e-2439d5fc77f3")
-		)
-		(pin "A3"
-			(uuid "d7562782-31f7-45eb-8680-529140df0607")
-		)
-		(pin "D14"
-			(uuid "592bdaff-d1aa-4616-aa6c-d9103995c2ca")
-		)
-		(pin "D4"
-			(uuid "6aa69b5e-1a77-4e50-b278-800dfccfe95e")
-		)
-		(pin "D13"
-			(uuid "83a45447-3e8f-405a-8e6a-7f6564e62c5a")
-		)
-		(pin "D6"
-			(uuid "e8cf13c5-4c71-40b7-be45-9176adf0be36")
-		)
-		(pin "A0"
-			(uuid "4c31d643-52a1-41e0-a7fd-ceba41467d5a")
-		)
-		(pin "+BAT"
-			(uuid "a3b9d6e1-85ed-4931-8710-143297913342")
-		)
-		(pin "GND"
-			(uuid "0fe49617-c736-4991-8335-4b2161ac7a6a")
-		)
-		(pin "D3"
-			(uuid "df20bbb2-7115-4dcd-b01a-39ebe3661d01")
-		)
-		(pin "A2"
-			(uuid "fe4e1574-8a21-4b00-a2e4-ba3493b63f7b")
-		)
-		(pin "+BAT"
-			(uuid "cef7863f-6b6e-4aac-8a5b-2e224009590b")
-		)
-		(pin "D5"
-			(uuid "0cc81f65-9db0-4f8f-9b42-c31f90183f3d")
-		)
-		(pin "+3.3VP"
-			(uuid "1e4cfa72-f9ae-4312-8792-1430980383cd")
-		)
-		(pin "D11"
-			(uuid "7faf3617-ad01-4271-b987-4bc5b685cf14")
-		)
-		(pin "GND"
-			(uuid "5627508e-24de-4428-9b35-eb8bbf1138db")
-		)
-		(pin "D7"
-			(uuid "8545d043-09fb-4f2a-9f76-b5bc8bf43911")
+		(pin "2"
+			(uuid "316cc7cc-dcd0-4d2b-8262-4aff8e08e52d")
 		)
 		(instances
 			(project ""
 				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
-					(reference "A1")
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 161.29 88.9 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "81c7d373-c402-4220-92f2-1f4d632f774a")
+		(property "Reference" "R3"
+			(at 157.988 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "680k"
+			(at 164.338 86.868 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 161.29 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "629e9bff-86ba-4e93-8a15-789c1a6aa279")
+		)
+		(pin "2"
+			(uuid "3d142391-21fc-4981-8274-92fbf21ee80c")
+		)
+		(instances
+			(project "water_sample_collector_iot_system"
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -1706,25 +2327,183 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Reed")
-		(at 171.45 97.79 0)
+		(lib_name "Main_PCB_WSC_IoT_1")
+		(lib_id "wsciot:Main_PCB_WSC_IoT")
+		(at 130.81 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f61174c1-70ca-448c-be36-76bcb6fd0c82")
-		(property "Reference" "SW1"
-			(at 171.45 91.44 0)
+		(uuid "ce7d815d-165a-42f5-9f81-326950335085")
+		(property "Reference" "A2"
+			(at 130.81 49.53 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "Main_PCB_WSC_IoT"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Main_PCB_WSC_IoT:Main_PCB_WSC_IoT"
+			(at 130.81 162.306 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://iversion.informatik.htw-dresden.de/smartproductionsystems/projects/oshie/htw-water-sample-collector"
+			(at 130.81 159.004 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Main PCB for water sample collector"
+			(at 131.572 85.852 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "A2"
+			(uuid "601624d5-cf49-4189-b0c6-0f86ebbc0308")
+		)
+		(pin "D4"
+			(uuid "bf5e4633-ce7e-439f-9418-b279cda89443")
+		)
+		(pin "A0"
+			(uuid "26b00f73-98ce-4b2c-a671-2202a17f1071")
+		)
+		(pin "D6"
+			(uuid "084aebe0-92ac-4675-965d-5088c33e4a07")
+		)
+		(pin "A5"
+			(uuid "9d9f9e23-b438-4b36-9bfa-5eb3403fa71c")
+		)
+		(pin "GND"
+			(uuid "b969e347-afe9-43da-b572-1ff178f65cf2")
+		)
+		(pin "A3"
+			(uuid "c373f39f-b98a-4c4d-be01-d27b6416be70")
+		)
+		(pin "GND"
+			(uuid "3d6d633a-4896-4a11-aa3b-b767785eca84")
+		)
+		(pin "D14"
+			(uuid "ebdc360f-df3f-4241-8146-fcc7f397261e")
+		)
+		(pin "D12"
+			(uuid "84018af2-1e6d-477d-adea-43b3c9db4676")
+		)
+		(pin "A1"
+			(uuid "320ea8b5-df57-47bf-8544-cac872495130")
+		)
+		(pin "A6"
+			(uuid "172ea4d7-1b6d-41f3-820a-d228649b1eca")
+		)
+		(pin "+BAT"
+			(uuid "f532b4e5-5b15-4cca-b9d1-46b52e06e03f")
+		)
+		(pin "D1"
+			(uuid "2d08ee14-e9b9-44f2-b8e4-c81aeea8c418")
+		)
+		(pin "+3.3VP"
+			(uuid "44f04fbc-2fad-4b65-b537-b19b3d80b752")
+		)
+		(pin "+3.3VP"
+			(uuid "d6671be2-c9e4-4143-b5f3-ccd91e88e42a")
+		)
+		(pin "D11"
+			(uuid "e8e54eb7-cf1c-4b4e-a470-0fdc708b0c5c")
+		)
+		(pin "GND"
+			(uuid "c13fbadc-33c6-4d2e-9206-77e0fad0d766")
+		)
+		(pin "GND"
+			(uuid "21c0f48c-30b9-4e0e-b533-45b758678536")
+		)
+		(pin "A4"
+			(uuid "78df6833-0ba2-46c4-80da-532289ee1641")
+		)
+		(pin "+3.3VP"
+			(uuid "7eafb7b4-74ae-4022-811b-3ee49ac265fe")
+		)
+		(pin "D3"
+			(uuid "7efbec9a-cfa0-42af-9934-f51835616401")
+		)
+		(pin "GND"
+			(uuid "ea34872c-01b9-4b7d-98d0-a690330a41b0")
+		)
+		(pin "+3.3VP"
+			(uuid "5b15d32d-0aa1-4c0b-93ff-003c7141fa52")
+		)
+		(pin "D13"
+			(uuid "8a2f997d-66fa-4bd6-8898-d902a2e1653f")
+		)
+		(pin "D2"
+			(uuid "ccfe6e64-3f11-4f6e-ba26-d32fab0da2a3")
+		)
+		(pin "D5"
+			(uuid "7c4483b4-77e8-41b0-a009-098a377288be")
+		)
+		(pin "D7"
+			(uuid "180d3c9b-7f2b-491a-b201-a966b09eb810")
+		)
+		(pin "AREF"
+			(uuid "70c27521-47e4-4bee-b009-c8842d7196d3")
+		)
+		(pin "GND"
+			(uuid "f1111e2b-b245-4d0c-bfe6-de194c51ec8a")
+		)
+		(pin "S"
+			(uuid "546ef585-a99d-4c8f-95eb-a7735fbab95a")
+		)
+		(pin "+BAT"
+			(uuid "3a8b919c-7ad1-4137-ba81-d4c07cd6594b")
+		)
+		(instances
+			(project ""
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "A2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small")
+		(at 172.72 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e19d7079-1e4e-4353-a563-6dd2c2d6887d")
+		(property "Reference" "C1"
+			(at 174.498 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_Reed"
-			(at 171.45 93.98 0)
+		(property "Value" "22 µF"
+			(at 176.022 95.504 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +2511,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 97.79 0)
+			(at 172.72 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +2520,160 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 97.79 0)
+			(at 172.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor, small symbol"
+			(at 172.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "732f5bea-1f71-47e6-8ddf-c400bc981292")
+		)
+		(pin "1"
+			(uuid "9f9c3100-8d21-40a1-8f9f-25a7dc7089e4")
+		)
+		(instances
+			(project ""
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 161.29 95.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e87149b7-de7c-467b-85db-e8b2e983feea")
+		(property "Reference" "D1"
+			(at 157.734 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 167.132 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 161.29 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ebc2c578-7a07-45c0-b0ff-ca7c27baefc4")
+		)
+		(pin "1"
+			(uuid "663c85d3-db54-4efa-b34f-988ee7080c4c")
+		)
+		(instances
+			(project ""
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Reed")
+		(at 190.5 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f61174c1-70ca-448c-be36-76bcb6fd0c82")
+		(property "Reference" "SW1"
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Reed"
+			(at 190.5 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +2682,7 @@
 			)
 		)
 		(property "Description" "reed switch"
-			(at 171.45 97.79 0)
+			(at 190.5 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)

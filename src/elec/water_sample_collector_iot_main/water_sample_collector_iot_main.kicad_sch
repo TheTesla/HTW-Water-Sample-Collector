@@ -7,7 +7,7 @@
 	(title_block
 		(title "Water Sample Collector LoRa IoT")
 		(date "2025-07-23")
-		(rev "0.2")
+		(rev "0.3")
 		(company "HTW Dresden")
 	)
 	(lib_symbols
@@ -13514,7 +13514,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "680k"
 			(at 230.124 71.882 0)
 			(effects
 				(font
@@ -13669,7 +13669,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "680k"
 			(at 43.18 168.91 90)
 			(effects
 				(font
