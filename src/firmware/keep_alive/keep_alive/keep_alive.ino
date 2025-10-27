@@ -120,12 +120,18 @@ LoRaModem modem;       // Create instance of the integrated LoRa modem
 String lora_comm(String msg)
 {
   int err;
-  if (!modem.begin(EU868)) {
+  int i = 0;
+  while (!modem.begin(EU868)) {
     log_err(ERR_WAN_MODEM);
+    i++;
+    if(i>4) return "";
   }
   log_err(OK);
+  i = 0;
   while (!modem.joinOTAA(appEui, appKey)) {
     log_err(ERR_WAN_JOIN);
+    i++;
+    if(i>4) return "";
   }
   log_err(OK);
   // Set poll interval to 60 secs.
@@ -140,15 +146,18 @@ String lora_comm(String msg)
     log_err(OK);
   } else {
     log_err(ERR_WAN_SEND);
+    return "";
   }
   delay(10000); // wait until data is received
   if (!modem.available()) {
     return "";
   }
   String rcv = "";
-  int i = 0;
+  i = 0;
   while (modem.available()) {
     rcv += (char)modem.read();
+    i++;
+    if(i>255) break;
   }
   return rcv;
 }
@@ -244,3 +253,4 @@ void loop()
   set_alarm(TimeSpan(0, interval_hours, interval_minutes, interval_seconds));
   delay(500);
 }
+
