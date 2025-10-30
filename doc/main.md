@@ -10,7 +10,7 @@ The IoT sensor node sends the reed switch state via _LoRa_ network. Most of the 
 Component              Connector         Description                                                    
 
 Main Board                               PCB for interfacing, electrical protection, power management    
- ├─┬ Arduino           2x14-Pin Header   data processing, _LoRa_ radio communication                    
+ ├─┬ Arduino           2x14-Pin Header   data processing, LoRa radio communication                    
  │ └── Antenna         U.FL/MHF1         passive 868 MHz miniature antenna                              
  ├─┬ Bat. Holder       1x2-Pin Rcpt      standard AA cell holder                                        
  │ └── Battery         clamp in holder   AA primary cell 3.6 V Li-SOCl2                      
