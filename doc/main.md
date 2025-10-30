@@ -16,7 +16,7 @@ Main Board                               PCB for interfacing, electrical protect
  │ └── Battery         clamp in holder   AA primary cell 3.6 V Li-SOCl<sub>2</sub>                      
  └─┬ Wake Up Circuit   1x6-Pin Header    Interface PCB with protection and wake impulse generation      
    └── Reed Switch     soldered Cable    located in water sample collector head to register valve state 
-``
+```
 
 ## Circuit functions
 
