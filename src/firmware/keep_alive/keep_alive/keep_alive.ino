@@ -27,6 +27,8 @@ int interval_hours = 1;
 int interval_minutes = 30;
 int interval_seconds = 0; 
 
+int retry_cycles = 4;
+int rcv_msg_size_limit = 255;
 
 /*        Input processing functions
           ========================== */
@@ -124,14 +126,14 @@ String lora_comm(String msg)
   while (!modem.begin(EU868)) {
     log_err(ERR_WAN_MODEM);
     i++;
-    if(i>4) return "";
+    if(i>retry_cycles) return "";
   }
   log_err(OK);
   i = 0;
   while (!modem.joinOTAA(appEui, appKey)) {
     log_err(ERR_WAN_JOIN);
     i++;
-    if(i>4) return "";
+    if(i>retry_cycles) return "";
   }
   log_err(OK);
   // Set poll interval to 60 secs.
@@ -157,7 +159,7 @@ String lora_comm(String msg)
   while (modem.available()) {
     rcv += (char)modem.read();
     i++;
-    if(i>255) break;
+    if(i>rcv_msg_size_limit) break;
   }
   return rcv;
 }

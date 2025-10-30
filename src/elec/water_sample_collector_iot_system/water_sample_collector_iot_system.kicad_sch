@@ -2080,7 +2080,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 179.07 100.33 0)
 			(effects
 				(font
@@ -2147,7 +2147,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 179.07 88.9 0)
 			(effects
 				(font
@@ -2214,7 +2214,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 161.29 88.9 0)
 			(effects
 				(font
@@ -2284,7 +2284,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Battery:BatteryHolder_Keystone_2460_1xAA"
 			(at 140.97 140.716 90)
 			(effects
 				(font
@@ -2510,7 +2510,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 172.72 92.71 0)
 			(effects
 				(font
@@ -2681,7 +2681,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "reed switch"
+		(property "Description" "SWITCH REED SPST-NO 350MA 140V"
+			(at 190.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "MDSR-7-10-20"
 			(at 190.5 88.9 0)
 			(effects
 				(font
