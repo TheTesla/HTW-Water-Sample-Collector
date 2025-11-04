@@ -20,6 +20,11 @@ Main Board                               PCB for interfacing, electrical protect
 
 ## Circuit functions
 
+This section describes the main ideas behind the main electrical circuit:
+
+![Schematics: main circuit](/doc/media/mainschematics.png)
+
+
 
 ### Data processing and communication
 
@@ -36,13 +41,13 @@ To reduce the power consumption, the supply voltage of _Arduino_ is turned off c
 
 ![Schematics: 3.3 V voltage regulator circuit](/doc/media/voltageregulator.png)
 
-It is hold in the power down state by the RTC _U1_ pulling down the _EN_ input with its OC output _MFP_:
+It is hold in the power-down state by the RTC _U1_ pulling down the _EN_ input with its OC output _MFP_:
 
 ![Schematics: rtc circuit](/doc/media/clock.png)
 
 This design ensures a safe startup, if the RTC is unconfigured, but requires additional <2 µA quiescent current.
 
-To be able to enter the power down mode, the _Arduino_ needs to configure the RTC. Therefore, the _Arduino_ firmware contains the wake up interval parameters:
+To be able to enter the power-down mode, the _Arduino_ needs to configure the RTC. Therefore, the _Arduino_ firmware contains the wake up interval parameters:
 
 ```
 // Wakeup Interval
@@ -59,7 +64,9 @@ Because the _Arduino_ needs at least 2 s to start, the input must be hold high l
 
 ![Schematics: wake up pulse time limit circuit](/doc/media/activationcircuit.png)
 
-In power down mode, only the RTC _U1_ is running. The input of voltage regulator _U2_ is powered, but the regulator itself is in power down state. The input power rail protection circuit is also powered in power down mode. 
+The 680 kOhm resistor limits the current into the input port to prevent early battery depletion when the circuit enters power-down mode, while the reed switch stays on. 
+
+In power-down mode, only the RTC _U1_ is running. The input of voltage regulator _U2_ is powered, but the regulator itself is in power-down state. The input power rail protection circuit is also powered in power-down mode. 
 
 During the _LoRa_ communication process the current consumption can be >100 mA for some seconds. To prevent supply voltage drop, the super caps _C11_ and _C12_ stabilize the input power:
 
@@ -70,9 +77,11 @@ This is importanten especially, when the battery is EOL or temperature is low. I
 
 ### Electrical protection
 
-External data signal connections are protected against short circuit and the application of external overvoltage of any polarity by utilizing series resistors.
+External data signal connections are protected against short circuit and the application of external overvoltage of any polarity by utilizing series resistors:
 
-
+![Schematics: data signal protection resistors, digital port](/doc/media/protectionresistors1.png)
+![Schematics: data signal protection resistors, analog inputs](/doc/media/protectionresistors2.png)
+![Schematics: data signal protection resistors, voltage regulator enable input](/doc/media/protectionresistors3.png)
 
 The power rails incoperate overvoltage and reverse polarity protection but no explicit current limit to lower the voltage drop:
 
