@@ -83,7 +83,7 @@ External data signal connections are protected against short circuit and the app
 ![Schematics: data signal protection resistors, analog inputs](/doc/media/protectionresistors2.png)
 ![Schematics: data signal protection resistors, voltage regulator enable input](/doc/media/protectionresistors3.png)
 
-The power rails incoperate overvoltage and reverse polarity protection but no explicit current limit to lower the voltage drop:
+The power rails incorporate overvoltage and reverse polarity protection but no explicit current limit to lower the voltage drop:
 
 ![Schematics: power input protection circuit](/doc/media/protectionbat.png)
 
