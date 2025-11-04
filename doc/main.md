@@ -22,13 +22,26 @@ Main Board                               PCB for interfacing, electrical protect
 
 ### Data processing and communication
 
+The _Arduino MKR WAN 1310_ handles all the data processing and communication via a public _LoRa_ wireless network. The firmware is configured to send a message each time the _Arduino_ is powered on. It includes the state of the pin _D7_, which represents the reed switch.
+
+The passive _LoRa_ antenna is connected to the MHF1 port on the top side of the _Arduino_. 
+
+The credentials for the _LoRa_ network must be configured in the `arduino_secrets.h`.
+
+
 ### Power management
 
-To reduce the power consumption, the supply voltage of _Arduino_ is turned off completely most of the time by disabling the 3.3 V voltage regulator _U2_. It is hold in the power down state by the RTC _U1_ pulling down the _EN_ input with its OC output. This design ensures a safe startup, if the RTC is unconfigured, but requires additional <2 µA quiescent current. A positive voltage into the _wake_ pin, the pin 2 of _J8_ can override the low level of the _MFP_ output of the RTC and enables the voltage regulator. Because the _Arduino_ needs at least 2 s to start, the input must be hold high long enough that the _Arduino_ can take over enabling the voltage regulator by configuring the RTC accordingly. It can't override the positive _wake_ input signal. It will stay active the whole time the input signal is high! 
+To reduce the power consumption, the supply voltage of _Arduino_ is turned off completely most of the time by disabling the 3.3 V voltage regulator _U2_. It is hold in the power down state by the RTC _U1_ pulling down the _EN_ input with its OC output. This design ensures a safe startup, if the RTC is unconfigured, but requires additional <2 µA quiescent current.
+
+A positive voltage into the _wake_ pin, the pin 2 of _J8_, can override the low level of the _MFP_ output of the RTC and enables the voltage regulator. Because the _Arduino_ needs at least 2 s to start, the input must be hold high long enough that the _Arduino_ can take over enabling the voltage regulator by configuring the RTC accordingly. It can't override the positive _wake_ input signal. It will stay active the whole time the input signal is high! 
 
 In power down mode, only the RTC _U1_ is running. The input of voltage regulator _U2_ is powered, but the regulator itself is in power down state. The input power rail protection circuit is also powered in power down mode. 
 
-During the _LoRa_ communication process the current consumption can be >100 mA for some seconds. To prevent supply voltage drop, the super caps _C11_ and _C12_ stabilize the input power. This is importantn especially, when the battery is EOL or temperature is low. In both cases the battery impedance is very high.
+During the _LoRa_ communication process the current consumption can be >100 mA for some seconds. To prevent supply voltage drop, the super caps _C11_ and _C12_ stabilize the input power:
+
+![Schematics: supercaps for the power rail](/doc/media/supercap.png)
+
+This is importanten especially, when the battery is EOL or temperature is low. In both cases the battery impedance is very high.
 
 
 ### Electrical protecion
@@ -37,6 +50,13 @@ External data signal connections are protected against short circuit and the app
 
 
 
-The power rails incoperate overvoltage and reverse polarity protection but no explicit current limit to lower the voltage drop.
+The power rails incoperate overvoltage and reverse polarity protection but no explicit current limit to lower the voltage drop:
+
+![Schematics: power input protection circuit](/doc/media/protectionbat.png)
+
+
+The 2 MOSFETs turn on only if the supply voltage is above the gate threshold voltage. Hence, they stay off, if the battery is connected in reverse polarity. In case of an input overvoltage event, the Z-diode turns the BJT on, which turns the MOSFETs off completely. That means, the whole board is turned off, it doesn't work like a voltage regulator.
+
+There are 2 MOSFETs, because they have body diodes as a result of the production process. The MOSFET at the power input side only protects against reverse polarity, while the other one protects against overvoltage. A diode is added between gate and source to protect the gate in case of reverse polarity input voltage >20 V.
 
 
