@@ -83,7 +83,11 @@ Following components are needed:
 
 The main _LoRa_ IoT module is fully assembled with battery, antenna, _Aduino_ on the main board and the blue mounting frame:
 
-![Photo: LoRa IoT system assembled and placed in case cover](/doc/media/LoRaIoTmain.webp)
+![Photo: top side of LoRa IoT system assembled and placed in case cover](/doc/media/LoRaIoTmain.webp)
+
+The back side: 
+
+![Photo: bottom side of LoRa IoT system assembled and placed in case cover](/doc/media/LoRaIoTmain_back.webp)
 
 This reed switch must be placed on top of the water sample collector head to be able to register the valve state:
 

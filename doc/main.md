@@ -63,6 +63,8 @@ A positive voltage into the _wake_ pin, the pin 2 of _J8_, can override the low 
 Because the _Arduino_ needs at least 2 s to start, the input must be hold high long enough that the _Arduino_ can take over enabling the voltage regulator by configuring the RTC accordingly. It can't override the positive _wake_ input signal. It will stay active the whole time the input signal is high! That means, the wake up pulse time must be limited to ensure a working power saving functionallity:
 
 ![Schematics: wake up pulse time limit circuit](/doc/media/activationcircuit.png)
+![Photo: top side of wake up pulse time limit circuit with 6-pin header and cable](/doc/media/LoRaIoTwake.webp)
+![Photo: bottom side of wake up pulse time limit circuit with 6-pin header and cable](/doc/media/LoRaIoTwake_back.webp)
 
 The 680 kOhm resistor limits the current into the input port to prevent early battery depletion when the circuit enters power-down mode, while the reed switch stays on. 
 
