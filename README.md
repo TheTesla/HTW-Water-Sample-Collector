@@ -34,6 +34,14 @@ The following files are the most important subset needed to build and use the me
 ```
 .
 └─┬ src/                                     # git modules/dependencies root
+  ├─┬ software/                              # software for the server
+  │ └── wsciot/                              # LoRa to email msg. forwarding server
+  ├─┬ firmware/                              # runs on the Arduino MKR WAN 1310
+  │ ├── check_clock/                         # debugging the RTC
+  │ ├── check_connection/                    # debugging LoRa communication
+  │ └── keep_alive/                          # the production firmware keep alive msg.
+  ├─┬ mech/                                  # 3d printable mounting elements
+  │ └── wsciot-mountingframe/                # the blue frame shown in the main photo
   └─┬ elec/                                  # electronic parts/pcbs
     ├── water_sample_collector_iot_main/     # main pcb, 1 piece needed
     └── water_sample_collector_iot_system/   # wiring diagram of the connections of the peripheral components around the water_sample_collector_iot_main
