@@ -75,12 +75,20 @@ Stefan Helmert <stefan.helmert@htw-dresden.de>
 Following components are needed:
 
 * 1 main board
+* 1 _Arduino MKR WAN 1310_
 * 1 Li-SOCl<sub>2</sub> battery
 * 1 antenna for 868 MHz
-* 1 antenna cable/pigtail
-* 1 reed switch
+* 1 reed switch with cable and activation circuit
+* 1 mounting frame
 
+The main _LoRa_ IoT module is fully assembled with battery, antenna, _Aduino_ on the main board and the blue mounting frame:
 
-![Photo: minimal setup wiring of the OSH water sample collector IoT system](doc/media/wiring.png)
+![Photo: LoRa IoT system assembled and placed in case cover](/doc/media/LoRaIoTmain.webp)
 
+This reed switch must be placed on top of the water sample collector head to be able to register the valve state:
 
+![Photo: Reed switch soldered to the cable](/doc/media/LoRaIoTReed.webp)
+
+The 6-pin connector of the cable, where the reed switch is attached, must be plugged into the corresponding socket at the main board: 
+
+![Photo: Reed switch soldered to the cable](/doc/media/LoRaIoTwake.webp)
