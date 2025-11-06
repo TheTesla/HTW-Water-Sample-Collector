@@ -27,6 +27,7 @@ int interval_hours = 1;
 int interval_minutes = 30;
 int interval_seconds = 0; 
 
+// LoRa
 int retry_cycles = 4;
 int rcv_msg_size_limit = 255;
 
