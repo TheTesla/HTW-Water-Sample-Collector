@@ -7281,6 +7281,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 171.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "435e7ce4-4f2f-482e-b7fe-c7ef4c5fcd4a")
 		)
@@ -7346,6 +7354,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -7550,6 +7566,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 87.63 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fa57eba6-b929-4beb-9cdf-e0b933e7ab23")
 		)
@@ -7701,6 +7725,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1N4148W"
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "687458cb-4595-4da3-816d-093aeac2826c")
 		)
@@ -7766,6 +7798,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -7837,6 +7877,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "173d68a9-29fa-4024-8e71-fe67ff3dd2ce")
 		)
@@ -7905,6 +7953,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -8038,6 +8094,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 135.89 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -8370,6 +8434,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 226.06 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c88bccb0-a6d6-4bdd-9a01-85ebe06e8c47")
 		)
@@ -8437,6 +8509,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "MCP7940NT-E/SN "
+			(at 85.09 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "7"
@@ -8590,6 +8670,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 203.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6a75cdd8-0742-4f05-9e17-3372245135f4")
 		)
@@ -8662,6 +8750,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "  BC856B"
+			(at 213.36 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8802,6 +8898,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 74.93 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9dc9d8cc-f242-4b60-adbd-b9a224167b96")
 		)
@@ -8938,6 +9042,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CXHP2R7335R-TW"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e71dd65a-f9b4-4d02-8cba-68711ace8941")
 		)
@@ -9003,6 +9115,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 74.93 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -9075,6 +9195,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 50.8 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "90ba38ad-fc2e-4532-97a0-ed2bc2ab029c")
 		)
@@ -9140,6 +9268,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -9211,6 +9347,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "  DMP3098L-7"
+			(at 43.18 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9351,6 +9495,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 110.49 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2432051e-a185-4467-ae5b-586fe7b039ec")
 		)
@@ -9416,6 +9568,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 236.22 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9485,6 +9645,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 177.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9616,6 +9784,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 164.0074 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ec25a649-b06a-4694-a3f7-2e6d74392ed7")
 		)
@@ -9681,6 +9857,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -9882,6 +10066,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "9f007c63-acdb-4f57-91f0-e117f90fad91")
 		)
@@ -10025,6 +10217,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "  DMP3098L-7"
+			(at 226.06 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "713c3e1a-0f9e-4428-963f-d0522768c18a")
 		)
@@ -10097,6 +10297,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 29.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0456df2a-a126-43de-b927-f0c3e23329e3")
 		)
@@ -10167,6 +10375,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CXHP2R7335R-TW"
+			(at 107.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "42fd4e9a-7ee4-4483-ad8d-c68966e21338")
 		)
@@ -10233,6 +10449,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -10308,6 +10532,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -10512,6 +10744,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 133.35 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "90089da3-bd9c-4b23-87ad-1a719dce9191")
 		)
@@ -10580,6 +10820,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -10652,6 +10900,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 163.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0a2f5ab0-b110-4968-a2cb-c4f67f0ee976")
 		)
@@ -10719,6 +10975,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 163.83 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "32a9de77-37b7-470e-ac2a-d5b03db5f0c0")
 		)
@@ -10784,6 +11048,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 162.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -10854,6 +11126,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -10944,6 +11224,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1N4148W"
+			(at 87.63 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "45452e99-99fb-49bb-9d4d-4e7afdbdff05")
 		)
@@ -11030,6 +11318,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "1N4148W"
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -11228,6 +11524,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 163.83 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -11493,6 +11797,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 164.0074 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "694b9f96-e084-4158-900c-ec9da5b05f3f")
 		)
@@ -11563,6 +11875,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 121.92 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e7449e7d-bccb-4271-ba19-820f2d440054")
 		)
@@ -11613,7 +11933,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.microcrystal.com/fileadmin/Media/Products/32kHz/Datasheet/CM7V-T1A.pdf"
 			(at 104.14 168.91 0)
 			(effects
 				(font
@@ -11622,13 +11942,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CC4V-T1A 32,768KHZ 9PF"
+		(property "Description" "CM7V-T1A-32.768KHZ-7PF-10PPM-TA-QC"
 			(at 104.14 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" " CM7V-T1A-32.768KHZ-7PF-10PPM-TA-QC"
+			(at 104.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -11698,6 +12026,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 198.12 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -11838,6 +12174,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "  BC856B"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12108,6 +12452,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 226.06 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5dccaa7c-43c7-4ad0-9077-634e9eb5e9d0")
 		)
@@ -12243,6 +12595,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "738fcca0-e4a2-4d48-b82d-4df0ec4c3e63")
 		)
@@ -12311,6 +12671,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -12443,6 +12811,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 162.56 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -12775,6 +13151,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "baaf4591-2a12-484a-b5d3-4796059e1ce2")
 		)
@@ -12862,7 +13246,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99bd2d54-1c12-45b3-b8bc-ba5204eb79d2")
@@ -12902,13 +13286,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor if adj. reg. used"
 			(at 91.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -13109,6 +13501,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "db385956-7471-4dd4-ba17-e9fa959df445")
 		)
@@ -13176,6 +13576,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 69.85 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -13331,6 +13739,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1N4148W"
+			(at 180.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "20a6217a-f294-4c42-90a2-c6f59988e191")
 		)
@@ -13398,6 +13814,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 234.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -13487,6 +13911,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "1N4148W"
+			(at 52.07 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9cbfc81a-0839-4602-a302-806cd87444ca")
 		)
@@ -13552,6 +13984,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 43.18 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -13625,6 +14065,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "  DMP3098L-7"
+			(at 171.45 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5e8358e2-131f-43e7-bf6f-e3c06fb68e8c")
 		)
@@ -13695,6 +14143,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 226.06 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "77c0854a-c84a-409d-992c-be31b647c158")
 		)
@@ -13761,6 +14217,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "4"
@@ -13836,6 +14300,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "STLQ020C33R"
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -13914,6 +14386,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 151.13 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14049,6 +14529,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 100.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fe11d811-464c-4569-bc2a-a31a31f0044b")
 		)
@@ -14120,6 +14608,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "  DMP3098L-7"
+			(at 97.79 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0e059636-1484-4c7b-9b5e-d61de761f19d")
 		)
@@ -14188,6 +14684,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 135.89 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14324,6 +14828,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 63.5 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b0964068-48f9-46a4-8afd-6600040d1f17")
 		)
@@ -14390,6 +14902,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14471,13 +14991,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single-cell battery"
+		(property "Description" "1 x 2 Pin Header 2.54 mm for Single-cell Li-SOCl2 battery"
 			(at 21.59 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "A1921-ND"
+			(at 21.59 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -14632,7 +15160,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d2b7acfd-b599-4a17-b40e-5ce175dc5fbc")
@@ -14672,13 +15200,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "Resistor if adj. reg. used"
 			(at 91.44 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 91.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14751,6 +15287,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 99.06 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2def4bc6-1f1d-4d57-8137-78e22a8a848d")
 		)
@@ -14820,6 +15364,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 160.02 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8f509de9-f534-48a0-a622-1b4adf56336b")
 		)
@@ -14882,6 +15434,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 54.61 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -14953,6 +15513,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 168.91 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "10d19b96-7750-4fd4-b32e-e08573e85612")
 		)
@@ -15009,13 +15577,21 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Socket for Arduino MKR WAN 1310"
+		(property "Description" "Socket (2 x 14 recp. 2.54 mm) for Arduino MKR WAN 1310"
 			(at 195.58 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" "SAM1213-50-ND"
+			(at 195.58 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "A5"
@@ -15163,6 +15739,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 163.83 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c2d92e3c-d6bf-423d-9bd0-9a9db03668d4")
 		)
@@ -15231,6 +15815,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -15303,6 +15895,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "CB5R5224CF-ZJ"
+			(at 133.35 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6466e110-e466-474a-86c6-f5e8e984e002")
 		)
@@ -15370,6 +15970,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 193.04 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "0c90b58e-384b-4923-8af8-93c9849fd9df")
 		)
@@ -15435,6 +16043,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -15704,6 +16320,14 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" ""
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5207f458-478f-4ab8-a4bc-ba9a4ce26bc8")
 		)
@@ -15769,6 +16393,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "MPN" ""
+			(at 226.06 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"

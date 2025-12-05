@@ -1,0 +1,6 @@
+"Reference","Qty","Manufacturer","MPN","Value","Datasheet","Beschreibung"
+,"1",,,"water_sample_collector_io_main",,"main board of this repo"
+,"1",,,"activation circuit board with reed switch described in water_sample_collector_iot_system",,"senses valve state (fill state), wakes the system"
+,"1",,,"battery_assembly",,"battery holder with cable and connector "
+,"1","Arduino","ABX00029","Arduino MKR WAN 1310","https://docs.arduino.cc/resources/datasheets/ABX00029-datasheet.pdf","Arduino with integrated LoRa connectivity"
+,"1","Pulse Electronics","ANTX150P116B08683","868 MHz passive antenna","https://www.mouser.de/datasheet/3/203/1/An_PCB_868Mhz_ANTX150P116B08683.pdf","Antenna connected to Arduino "
