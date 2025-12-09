@@ -4,6 +4,8 @@ The project contains mainly SMD electronics and some mechanic work:
 
 ## Main board
 
+Related BOM: [BOM main PCB](src/elec/water_sample_collector_iot_main/BOM_water_sample_collector_iot_main.csv)
+
 1. Solder the SMD parts.
 2. Solder the connectors.
 3. Test the protection circuits without _Arduino_.
@@ -20,6 +22,8 @@ The first prototype uses an fixed voltage regulator, resistors _R5_ and _R6_ are
 ![Photo: soldered main board bottom side](/doc/media/mainboard_back.webp)
 
 ## Reed switch with Wake up circuit
+
+Related BOM: [BOM activation (wake up) PCB](src/elec/water_sample_collector_iot_system/BOM_activation_board_water_sample_collector_iot_system.csv)
 
 1. Solder the SMD parts.
 2. Solder the THT parts.
@@ -46,6 +50,8 @@ The SMD parts on the wake up board:
 
 ## Battery holder
 
+Related BOM: [BOM battery assembly](src/elec/water_sample_collector_iot_system/BOM_battery_assembly.csv)
+
 Pay attention to the polarity!
 
 1. Stick the wires through the holes of the holder and knot them for tension relief.
@@ -56,7 +62,6 @@ Pay attention to the polarity!
 Crimped connector:
 
 ![Photo: battery connector](/doc/media/battery_connector.webp)
-
 
 Fully assembled battery holder with battery cell:
 
@@ -80,6 +85,8 @@ The 3d printed mounting frame with the antenna glued on:
 
 
 ## Complete module
+
+Related BOM: [BOM top level electronics](src/elec/water_sample_collector_iot_system/BOM_TOP_elec.csv)
 
 1. Program the _Arduino_ with the configured firmware.
 2. Bend the mounting frame to slide the main board in.
