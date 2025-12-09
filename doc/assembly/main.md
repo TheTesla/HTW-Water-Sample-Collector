@@ -13,6 +13,12 @@ The project contains mainly SMD electronics and some mechanic work:
 7. Solder the 2 long supercaps.
 8. Test - press reset on the _Arduino_ after supercap charge, because the voltage rises too slow for power on reset!
 
+The first prototype uses an fixed voltage regulator, resistors _R5_ and _R6_ are not populated. _R8_ and _R9_ are not populated, because the _Arduino_ has the pull-ups integrated. The crystal _Y1_ was changed later, because it needs to have a high motion capacitance:
+
+![Photo: soldered main board top side](/doc/media/mainboard.webp)
+
+![Photo: soldered main board bottom side](/doc/media/mainboard_back.webp)
+
 ## Reed switch with Wake up circuit
 
 1. Solder the SMD parts.
