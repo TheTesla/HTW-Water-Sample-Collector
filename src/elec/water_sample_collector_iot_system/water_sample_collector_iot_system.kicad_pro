@@ -521,12 +521,6 @@
         },
         {
           "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "MPN",
           "name": "MPN",
           "show": true
@@ -535,6 +529,12 @@
           "group_by": false,
           "label": "Link",
           "name": "Link",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
           "show": true
         },
         {
