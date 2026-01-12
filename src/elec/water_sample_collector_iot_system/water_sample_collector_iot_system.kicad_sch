@@ -7,7 +7,7 @@
 	(title_block
 		(title "Wiring of the water sample collector IoT system")
 		(date "2025-09-05")
-		(rev "0.3")
+		(rev "0.4")
 		(company "HTW Dresden")
 	)
 	(lib_symbols
@@ -1340,7 +1340,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized_Small"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
@@ -1360,7 +1360,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C_Polarized_Small"
+			(property "Value" "C_Small"
 				(at 0.254 -2.032 0)
 				(effects
 					(font
@@ -1387,7 +1387,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Polarized capacitor, small symbol"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1396,7 +1396,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1405,7 +1405,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CP_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1414,35 +1414,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_Polarized_Small_0_1"
-				(rectangle
-					(start -1.524 0.6858)
-					(end 1.524 0.3048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.524 -0.3048)
-					(end 1.524 -0.6858)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -1.27 1.524) (xy -0.762 1.524)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -1451,10 +1429,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.016 1.27) (xy -1.016 1.778)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -1462,10 +1440,10 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_Small_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
 					(at 0 2.54 270)
-					(length 1.8542)
+					(length 2.032)
 					(name "~"
 						(effects
 							(font
@@ -1483,7 +1461,7 @@
 				)
 				(pin passive line
 					(at 0 -2.54 90)
-					(length 1.8542)
+					(length 2.032)
 					(name "~"
 						(effects
 							(font
@@ -3627,7 +3605,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(uuid "20a83d95-0ae7-4174-9a8a-2395c9040466")
 		(property "Reference" "J5"
 			(at 201.93 85.09 0)
@@ -3673,6 +3651,15 @@
 			)
 		)
 		(property "MPN" "1600103/100"
+			(at 200.66 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" ""
 			(at 200.66 90.17 0)
 			(effects
 				(font
@@ -3775,6 +3762,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/amphenol-cs-commercial-products/G800W302018EU/17069165"
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "66073ec2-67fa-46db-bb89-c55a5ec61087")
 		)
@@ -3870,6 +3866,24 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"
+			(at 190.5 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0805FT10K0"
+			(at 190.5 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "88e82543-df74-4766-b8d6-c83875dd2cd4")
 		)
@@ -3961,6 +3975,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diotec-semiconductor/1N4148W/18833653"
+			(at 177.8 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ae402b2a-e744-4da8-94e1-6f1d5bdf968e")
 		)
@@ -4044,6 +4067,24 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805FT10K0/1760676"
+			(at 190.5 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0805FT10K0"
+			(at 190.5 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3c459afd-8160-49a7-9f79-32862998e479")
 		)
@@ -4066,7 +4107,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(uuid "4e67cfba-a048-46b5-b2ff-1434f8595fcb")
 		(property "Reference" "J2"
 			(at 161.036 84.582 0)
@@ -4127,6 +4168,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 165.1 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4224,6 +4274,24 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805FT680K/1760500"
+			(at 173.99 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0805FT680K"
+			(at 173.99 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "629e9bff-86ba-4e93-8a15-789c1a6aa279")
 		)
@@ -4246,7 +4314,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "a35f2b66-c5c7-4f21-8f03-50f9ab87c5f8")
 		(property "Reference" "J3"
 			(at 196.85 94.742 0)
@@ -4309,6 +4377,15 @@
 				)
 			)
 		)
+		(property "Link" ""
+			(at 200.66 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a24e8113-2db6-44be-b201-15285e967bcf")
 		)
@@ -4322,13 +4399,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 185.42 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8319eeb-0ff4-41da-ad4a-2fc2555b9196")
+		(property "Reference" "C1"
+			(at 187.96 90.1762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22 µF"
+			(at 187.96 92.7162 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21A226MAYNNNE/10479857"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21A226MAYNNNE"
+			(at 185.42 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b703be5a-8221-4f0d-a0bd-bba5d49574fd")
+		)
+		(pin "1"
+			(uuid "23177f3c-7d4e-440e-9daf-9b71b54796ae")
+		)
+		(instances
+			(project ""
+				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 200.66 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b5572c16-b22b-4453-bbd1-88faefdd6d77")
 		(property "Reference" "J4"
 			(at 196.596 85.344 0)
@@ -4375,6 +4540,15 @@
 				(hide yes)
 			)
 		)
+		(property "Link" ""
+			(at 200.66 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "098630f3-5592-4ba1-9881-92f3a9e80478")
 		)
@@ -4397,7 +4571,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "cbc45415-6053-4a66-8bf5-84a477588a54")
 		(property "Reference" "BT1"
@@ -4461,6 +4635,15 @@
 				)
 			)
 		)
+		(property "Link" ""
+			(at 140.97 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2e2e76a9-4566-4598-807c-4087acb1efc9")
 		)
@@ -4484,7 +4667,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "ce7d815d-165a-42f5-9f81-326950335085")
 		(property "Reference" "A2"
@@ -4544,6 +4727,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 130.81 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "A2"
@@ -4652,104 +4844,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small")
-		(at 185.42 91.44 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e19d7079-1e4e-4353-a563-6dd2c2d6887d")
-		(property "Reference" "C1"
-			(at 187.198 89.408 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22 µF"
-			(at 188.722 94.234 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
-			(at 185.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor, small symbol"
-			(at 185.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "860080672001"
-			(at 195.072 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" ""
-			(at 185.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 185.42 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "732f5bea-1f71-47e6-8ddf-c400bc981292")
-		)
-		(pin "1"
-			(uuid "9f9c3100-8d21-40a1-8f9f-25a7dc7089e4")
-		)
-		(instances
-			(project ""
-				(path "/bd53aa40-d43c-4b51-b557-66f962c95cd3"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Reed")
 		(at 233.68 87.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "f61174c1-70ca-448c-be36-76bcb6fd0c82")
 		(property "Reference" "SW1"
@@ -4818,6 +4919,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 233.68 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"

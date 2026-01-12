@@ -60,10 +60,10 @@ void setup() {
   //MCP7940.setAlarm(0, matchMinutes, now - TimeSpan(0, 0, 0, now.second()), true);  // Match once a minute at 0 seconds
   MCP7940.setAlarmPolarity(1);
   MCP7940.setBattery(1);
-  MCP7940.setSQWState(false);  
-  //MCP7940.setSQWSpeed(0);  // Set the square wave pin
+  MCP7940.setSQWState(true);  
+  MCP7940.setSQWSpeed(0);  // Set the square wave pin
   //MCP7940.writeRegisterBit(MCP7940_CONTROL, 3, 0);
-  //MCP7940.setMFP(false);
+  MCP7940.setMFP(false);
 
   pinMode(in_reed, INPUT);
   pinMode(led_conn, OUTPUT);
