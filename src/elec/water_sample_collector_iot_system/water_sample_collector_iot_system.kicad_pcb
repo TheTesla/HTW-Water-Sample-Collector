@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(date "2026-01-12")
-		(rev "0.4")
+		(rev "0.4.1")
 		(comment 4 "AISLER Project ID: UXZIWMNF")
 	)
 	(layers
@@ -1647,7 +1647,7 @@
 		(descr "Soldered wire connection, for 2 times 2.5 mm² wires, reinforced insulation, conductor diameter 2.4mm, outer diameter 4.4mm, size source Multi-Contact FLEXI-xV 2.5 (https://www.staubli.com/content/dam/ecs/catalogs-brochures/TM/CAB-Main-11014119-en.pdf#page=11), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 2.5sqmm")
 		(property "Reference" "J4"
-			(at 4.4 -3.4 90)
+			(at 4.4 0 90)
 			(layer "F.SilkS")
 			(uuid "13997e70-9a30-4eb7-9b47-91e3a93d26b7")
 			(effects
@@ -1862,7 +1862,7 @@
 	(footprint "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen"
 		(layer "B.Cu")
 		(uuid "304e33d2-0cff-46f9-9bf5-7166e312416a")
-		(at 124.968 83.312 180)
+		(at 109.6 84.8 180)
 		(descr "Open Source Hardware Symbol")
 		(tags "Logo Symbol OSHW")
 		(property "Reference" "REF**"
@@ -2329,7 +2329,7 @@
 		(descr "Through hole straight pin header, 1x06, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x06 2.54mm single row")
 		(property "Reference" "J1"
-			(at -2.648 -5.08 90)
+			(at -2.4 -0.104 90)
 			(layer "B.SilkS")
 			(uuid "3be6bfc8-1ee3-4875-b79a-27dfb8dafd21")
 			(effects
@@ -2685,7 +2685,7 @@
 	(footprint "kicad_logos:htw_logo_x15"
 		(layer "B.Cu")
 		(uuid "7004f094-0d61-4894-aa44-c8f42fb27e6b")
-		(at 109.22 92.456 180)
+		(at 109.22 91.8 180)
 		(property "Reference" "G***"
 			(at 0.508 0 0)
 			(layer "B.SilkS")
