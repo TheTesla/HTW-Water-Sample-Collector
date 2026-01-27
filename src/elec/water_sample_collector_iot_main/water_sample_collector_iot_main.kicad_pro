@@ -528,8 +528,14 @@
       "fields_ordered": [
         {
           "group_by": false,
-          "label": "Reference",
+          "label": "Designator",
           "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
           "show": true
         },
         {
@@ -540,8 +546,8 @@
         },
         {
           "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
+          "label": "Link",
+          "name": "Link",
           "show": true
         },
         {

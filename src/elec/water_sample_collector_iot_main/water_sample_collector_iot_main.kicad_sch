@@ -6,12 +6,12 @@
 	(paper "A4")
 	(title_block
 		(title "Water Sample Collector LoRa IoT")
-		(date "2025-07-23")
-		(rev "0.4")
+		(date "2026-01-27")
+		(rev "0.5")
 		(company "HTW Dresden")
 	)
 	(lib_symbols
-		(symbol "Connector:Conn_01x02_Pin"
+		(symbol "Connector:Conn_01x02_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -27,7 +27,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x02_Pin"
+			(property "Value" "Conn_01x02_Socket"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -88,32 +88,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x02_Pin_1_1"
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x02_Socket_1_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -125,8 +103,32 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -136,7 +138,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -154,7 +156,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -174,7 +176,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x03_Pin"
+		(symbol "Connector:Conn_01x03_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -190,7 +192,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x03_Pin"
+			(property "Value" "Conn_01x03_Socket"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -251,43 +253,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x03_Pin_1_1"
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x03_Socket_1_1"
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -299,7 +268,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -311,8 +280,44 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -322,7 +327,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -340,7 +345,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -358,7 +363,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -378,7 +383,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x04_Pin"
+		(symbol "Connector:Conn_01x04_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -394,7 +399,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x04_Pin"
+			(property "Value" "Conn_01x04_Socket"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -455,54 +460,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_Pin_1_1"
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x04_Socket_1_1"
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -514,7 +475,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -526,7 +487,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -538,8 +499,56 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -549,7 +558,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -567,7 +576,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -585,7 +594,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -603,7 +612,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -623,7 +632,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Conn_01x08_Pin"
+		(symbol "Connector:Conn_01x08_Socket"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -639,7 +648,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_01x08_Pin"
+			(property "Value" "Conn_01x08_Socket"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -700,98 +709,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x08_Pin_1_1"
-				(rectangle
-					(start 0.8636 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 5.207)
-					(end 0 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -7.493)
-					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 0.8636 -10.033)
-					(end 0 -10.287)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "Conn_01x08_Socket_1_1"
 				(polyline
 					(pts
-						(xy 1.27 7.62) (xy 0.8636 7.62)
+						(xy -1.27 7.62) (xy -0.508 7.62)
 					)
 					(stroke
 						(width 0.1524)
@@ -803,7 +724,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 5.08) (xy 0.8636 5.08)
+						(xy -1.27 5.08) (xy -0.508 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -815,7 +736,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0.8636 2.54)
+						(xy -1.27 2.54) (xy -0.508 2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -827,7 +748,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 0) (xy 0.8636 0)
+						(xy -1.27 0) (xy -0.508 0)
 					)
 					(stroke
 						(width 0.1524)
@@ -839,7 +760,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
 					)
 					(stroke
 						(width 0.1524)
@@ -851,7 +772,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -863,7 +784,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -7.62) (xy 0.8636 -7.62)
+						(xy -1.27 -7.62) (xy -0.508 -7.62)
 					)
 					(stroke
 						(width 0.1524)
@@ -875,8 +796,104 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -10.16) (xy 0.8636 -10.16)
+						(xy -1.27 -10.16) (xy -0.508 -10.16)
 					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 7.112)
+					(mid -0.5058 7.62)
+					(end 0 8.128)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 4.572)
+					(mid -0.5058 5.08)
+					(end 0 5.588)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -8.128)
+					(mid -0.5058 -7.62)
+					(end 0 -7.112)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -10.668)
+					(mid -0.5058 -10.16)
+					(end 0 -9.652)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -886,7 +903,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 7.62 180)
+					(at -5.08 7.62 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -904,7 +921,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 5.08 180)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -922,7 +939,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 2.54 180)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -940,7 +957,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 0 180)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -958,7 +975,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -2.54 180)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -976,7 +993,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -5.08 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -994,7 +1011,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -7.62 180)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -1012,7 +1029,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -10.16 180)
+					(at -5.08 -10.16 0)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -4872,6 +4889,30 @@
 		(color 0 0 0 0)
 		(uuid "ef474aba-080a-44b0-b3a1-bfe1d9495dcc")
 	)
+	(no_connect
+		(at 220.98 104.14)
+		(uuid "093fe7af-2997-4402-9403-6eca8e0fd16a")
+	)
+	(no_connect
+		(at 170.18 127)
+		(uuid "b0add5e2-71a5-43b2-81f5-9d4175e36969")
+	)
+	(no_connect
+		(at 220.98 99.06)
+		(uuid "c7799170-e65f-4647-99e5-af9e7d45ed62")
+	)
+	(no_connect
+		(at 170.18 124.46)
+		(uuid "db00df0f-23dc-4e71-8e15-08ce1da57864")
+	)
+	(no_connect
+		(at 220.98 101.6)
+		(uuid "dbb535eb-68ed-46be-aa69-f7ac8d51cb19")
+	)
+	(no_connect
+		(at 220.98 129.54)
+		(uuid "de946cd8-29f6-4f71-944a-b78a098a38c9")
+	)
 	(wire
 		(pts
 			(xy 91.44 86.36) (xy 100.33 86.36)
@@ -5044,7 +5085,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.8174 109.22) (xy 170.18 109.22)
+			(xy 167.64 109.22) (xy 170.18 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5184,7 +5225,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 160.1974 109.22)
+			(xy 154.94 109.22) (xy 160.02 109.22)
 		)
 		(stroke
 			(width 0)
@@ -5294,7 +5335,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 106.68) (xy 160.1974 106.68)
+			(xy 154.94 106.68) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6494,7 +6535,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.8174 106.68) (xy 170.18 106.68)
+			(xy 167.64 106.68) (xy 170.18 106.68)
 		)
 		(stroke
 			(width 0)
@@ -6744,7 +6785,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 149.86) (xy 227.33 149.86)
+			(xy 227.33 149.86) (xy 231.14 149.86)
 		)
 		(stroke
 			(width 0)
@@ -7281,12 +7322,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 171.45 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 171.45 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7356,12 +7406,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7566,12 +7625,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT330R"
 			(at 87.63 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT330R/1757830"
+			(at 87.63 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7662,7 +7730,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "059688b5-27bc-41be-ad10-190a54ac53da")
 		(property "Reference" "D6"
 			(at 242.57 72.39 0)
@@ -7726,11 +7793,20 @@
 			)
 		)
 		(property "MPN" "1N4148W"
+			(at 242.316 76.962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/smc-diode-solutions/1N4148W/6022450"
 			(at 242.57 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7800,12 +7876,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -7818,83 +7903,6 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 236.22 96.52 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "074d8b34-1ed3-4373-9d4d-72b10dbfcaf7")
-		(property "Reference" "J10"
-			(at 237.49 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 226.06 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 236.22 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 236.22 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 236.22 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "173d68a9-29fa-4024-8e71-fe67ff3dd2ce")
-		)
-		(pin "2"
-			(uuid "8021d8b1-c5a5-41a8-9c8e-f5c862b06ca7")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -7955,12 +7963,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 113.03 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+			(at 113.03 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8096,12 +8113,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT330R"
 			(at 135.89 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT330R/1757830"
+			(at 135.89 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8434,12 +8460,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8511,12 +8546,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MCP7940NT-E/SN "
+		(property "MPN" "MCP7940MT-I/SN"
 			(at 85.09 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/microchip-technology/MCP7940MT-I-SN/3131486"
+			(at 85.09 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "7"
@@ -8670,12 +8714,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 203.2 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 203.2 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -8752,12 +8805,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  BC856B"
+		(property "MPN" " BC856B"
 			(at 213.36 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diotec-semiconductor/BC856B/13155342"
+			(at 213.36 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8898,12 +8960,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B104KACNNNC"
 			(at 74.93 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B104KACNNNC/3886757"
+			(at 74.93 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9050,6 +9121,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/cda-zhifengwei-technology/CXHP2R7335R-TW/21848950"
+			(at 107.95 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e71dd65a-f9b4-4d02-8cba-68711ace8941")
 		)
@@ -9117,12 +9197,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 74.93 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 74.93 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9195,12 +9284,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT2M20"
 			(at 50.8 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT2M20/1757858"
+			(at 50.8 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9270,12 +9368,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9349,12 +9456,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  DMP3098L-7"
+		(property "MPN" " DMP3098L-7"
 			(at 43.18 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diodes-incorporated/DMP3098L-7/1964699"
+			(at 43.18 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9495,12 +9611,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603N100J500CT"
 			(at 110.49 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/walsin-technology-corporation/0603N100J500CT/9354968"
+			(at 110.49 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9519,88 +9644,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x02_Pin")
-		(at 236.22 152.4 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "33cf0a28-9519-437c-b810-5b07009491b1")
-		(property "Reference" "J7"
-			(at 238.252 150.622 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x02_Pin"
-			(at 238.252 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 236.22 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 236.22 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 236.22 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0609d58e-159c-47c1-9c47-447e0405157e")
-		)
-		(pin "2"
-			(uuid "fbe736f2-ff38-4d62-b177-a1d36dd595ba")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 177.8 151.13 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "34a3e64c-1de4-4e91-8006-205e45b56d38")
 		(property "Reference" "H4"
 			(at 176.784 145.288 0)
@@ -9653,6 +9703,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 177.8 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -9734,7 +9793,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 164.0074 106.68 90)
+		(at 163.83 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9742,7 +9801,7 @@
 		(dnp no)
 		(uuid "3ba000da-c64d-41fb-86b6-c582ed02a8c1")
 		(property "Reference" "R20"
-			(at 158.75 105.41 90)
+			(at 158.5726 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9750,7 +9809,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 163.83 106.68 90)
+			(at 163.6526 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9758,7 +9817,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 164.0074 108.458 90)
+			(at 163.83 108.458 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9767,7 +9826,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 164.0074 106.68 0)
+			(at 163.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9776,7 +9835,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 164.0074 106.68 0)
+			(at 163.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9784,12 +9843,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 164.0074 106.68 0)
+		(property "MPN" "RMCF0805FT10K0"
+			(at 163.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -9859,12 +9927,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10015,87 +10092,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 124.46 104.14 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4bdb79ac-4c00-4a6e-b775-458f655a9c54")
-		(property "Reference" "J2"
-			(at 121.666 104.902 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 126.746 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 124.46 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 124.46 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 124.46 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "9f007c63-acdb-4f57-91f0-e117f90fad91")
-		)
-		(pin "3"
-			(uuid "6fac98b2-4de0-48d6-9616-756191a69aac")
-		)
-		(pin "1"
-			(uuid "89b02dca-bd90-4819-aec8-99cdd326ad4f")
-		)
-		(pin "2"
-			(uuid "b3388cfa-9654-4c16-a55a-cbe73e0100c1")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 19.05 107.95 0)
 		(unit 1)
@@ -10217,12 +10213,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  DMP3098L-7"
+		(property "MPN" " DMP3098L-7"
 			(at 226.06 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diodes-incorporated/DMP3098L-7/1964699"
+			(at 226.06 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -10297,12 +10302,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B104KACNNNC"
 			(at 29.21 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B104KACNNNC/3886757"
+			(at 29.21 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10383,6 +10397,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/cda-zhifengwei-technology/CXHP2R7335R-TW/21848950"
+			(at 107.95 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42fd4e9a-7ee4-4483-ad8d-c68966e21338")
 		)
@@ -10399,95 +10422,13 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 260.35 106.68 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5b2c0c72-c5b5-4c5c-af10-2cce3a3c152d")
-		(property "Reference" "J3"
-			(at 268.478 106.172 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 268.478 108.712 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 260.35 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 260.35 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 260.35 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 260.35 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "5c0e3889-afae-4ed2-96f4-7eac526d3bda")
-		)
-		(pin "3"
-			(uuid "dfaffacd-5373-4e96-81b0-12eede7b0bf0")
-		)
-		(pin "1"
-			(uuid "e471abe5-6859-42fd-ae12-dd7f6cd64926")
-		)
-		(pin "2"
-			(uuid "3b16fd1b-38ef-43d4-b17a-8db02165418c")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 138.43 73.66 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5d407ed4-6b06-4db3-85cb-57c165cd4dcc")
 		(property "Reference" "R9"
 			(at 139.954 72.39 0)
@@ -10534,12 +10475,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT2K20"
 			(at 138.43 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805FT2K20/1760345"
+			(at 138.43 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10744,12 +10694,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT330R"
 			(at 133.35 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT330R/1757830"
+			(at 133.35 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10762,87 +10721,6 @@
 			(project ""
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 236.22 88.9 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6036337f-b7ee-485c-8948-bc4af9207cdf")
-		(property "Reference" "J9"
-			(at 237.49 90.1701 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 229.362 84.582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 236.22 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 236.22 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 236.22 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 236.22 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "ad3ae5bf-ca8c-43b0-b9b4-9819a4cb3ee1")
-		)
-		(pin "1"
-			(uuid "dd983f3a-86c7-4987-83da-889bc990c1d8")
-		)
-		(pin "3"
-			(uuid "78fffa83-3006-4cfd-815f-ba85934cb829")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -10900,12 +10778,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -10918,6 +10805,97 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 266.7 78.74 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6213e47e-db5f-4687-8ad9-6ff7d4dab2e2")
+		(property "Reference" "J8"
+			(at 267.97 80.0101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 262.636 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-103-01-T-S/1112302"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-103-01-T-S"
+			(at 266.7 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "4a1fc993-ee5d-4a2f-b56f-b160d519b460")
+		)
+		(pin "1"
+			(uuid "8fd768ed-3299-43fc-9bc2-85eba69b6b03")
+		)
+		(pin "2"
+			(uuid "3e474b7d-a67c-4973-8c45-631bc2fd49e5")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -10975,12 +10953,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11050,12 +11037,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 162.56 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 162.56 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11128,12 +11124,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B105KBFNNNE"
 			(at 19.05 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B105KBFNNNE/3886687"
+			(at 19.05 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11232,6 +11237,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/smc-diode-solutions/1N4148W/6022450"
+			(at 87.63 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "45452e99-99fb-49bb-9d4d-4e7afdbdff05")
 		)
@@ -11255,7 +11269,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6f7eac8b-fd54-44b6-b4e2-6c9ea83df481")
 		(property "Reference" "D5"
 			(at 254 64.7699 90)
@@ -11321,11 +11334,20 @@
 			)
 		)
 		(property "MPN" "1N4148W"
-			(at 251.46 66.04 0)
+			(at 248.666 66.294 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/smc-diode-solutions/1N4148W/6022450"
+			(at 251.46 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11526,12 +11548,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11747,7 +11778,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 164.0074 109.22 90)
+		(at 163.83 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11755,7 +11786,7 @@
 		(dnp no)
 		(uuid "7245cd43-4d2a-4247-a36a-2f246944fa39")
 		(property "Reference" "R21"
-			(at 158.75 108.204 90)
+			(at 158.5726 108.204 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11763,7 +11794,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 163.83 109.22 90)
+			(at 163.6526 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11771,7 +11802,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 164.0074 110.998 90)
+			(at 163.83 110.998 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11780,7 +11811,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 164.0074 109.22 0)
+			(at 163.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11789,7 +11820,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 164.0074 109.22 0)
+			(at 163.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11797,12 +11828,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
-			(at 164.0074 109.22 0)
+		(property "MPN" "RMCF0805FT10K0"
+			(at 163.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11875,12 +11915,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B104KACNNNC"
 			(at 121.92 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B104KACNNNC/3886757"
+			(at 121.92 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -11951,12 +12000,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" " CM7V-T1A-32.768KHZ-7PF-10PPM-TA-QC"
+		(property "MPN" "CM7V-T1A-32.768KHZ-7PF-10PPM-TA-QC"
 			(at 104.14 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/micro-crystal-ag/CM7V-T1A-32-768KHZ-7PF-10PPM-TA-QC/10499112"
+			(at 104.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12028,12 +12086,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "BZV55-C5V6,115"
 			(at 198.12 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/nexperia-usa-inc/BZV55-C5V6-115/1162883"
+			(at 198.12 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12176,12 +12243,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  BC856B"
+		(property "MPN" " BC856B"
 			(at 85.09 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diotec-semiconductor/BC856B/13155342"
+			(at 85.09 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -12335,6 +12411,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 236.22 96.52 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "817ede20-d4fb-4efd-9a56-57bbf79eb25e")
+		(property "Reference" "J10"
+			(at 237.49 96.5201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 231.394 98.806 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-102-01-T-S/1112303"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-102-01-T-S"
+			(at 236.22 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2aa800a3-cb20-4caf-bba1-27aefb5ca444")
+		)
+		(pin "2"
+			(uuid "acfcd335-0277-4125-9789-cbf77e090ed4")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V8")
 		(at 19.05 78.74 0)
 		(unit 1)
@@ -12401,6 +12565,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x08_Socket")
+		(at 149.86 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "841b5d80-bef6-43a1-9c29-152363e6ca6f")
+		(property "Reference" "J5"
+			(at 152.654 116.586 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x08_Socket"
+			(at 156.464 119.126 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x08, script generated"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-108-01-T-S/1112297"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-108-01-T-S"
+			(at 149.86 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f4c27c5c-41ff-4321-9f02-04414c69e157")
+		)
+		(pin "2"
+			(uuid "c7c4828c-59ba-4fc4-a438-c7be9afa470c")
+		)
+		(pin "6"
+			(uuid "7aa24a2c-56b4-4c76-a172-6a09768113a8")
+		)
+		(pin "3"
+			(uuid "66f6e9cb-bebf-42d8-aaca-ce33cd83504f")
+		)
+		(pin "4"
+			(uuid "664de045-125a-40fe-a41d-8da683c0fc59")
+		)
+		(pin "5"
+			(uuid "269aac1e-ab74-44e7-af15-6e7308dd5912")
+		)
+		(pin "7"
+			(uuid "7cc240b6-0439-451e-8398-d9e36c928b2b")
+		)
+		(pin "8"
+			(uuid "e6605e58-eb58-4063-80d3-32d26d4fa62c")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 226.06 91.44 90)
 		(unit 1)
@@ -12452,12 +12719,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12542,86 +12818,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x03_Pin")
-		(at 266.7 78.74 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8a986b52-15d3-40d6-9b24-dce030d4936c")
-		(property "Reference" "J8"
-			(at 267.97 77.4699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_01x03_Pin"
-			(at 267.97 80.0099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
-			(at 266.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 266.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 266.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 266.7 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "738fcca0-e4a2-4d48-b82d-4df0ec4c3e63")
-		)
-		(pin "1"
-			(uuid "49b77c48-2e35-490e-b72d-117cf3a802c5")
-		)
-		(pin "3"
-			(uuid "3ad0fad6-ff93-4fbb-8e95-ca9be1b3c986")
-		)
-		(instances
-			(project ""
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 226.06 78.74 90)
 		(unit 1)
@@ -12673,12 +12869,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -12813,12 +13018,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 162.56 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 162.56 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13104,7 +13318,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "95c25c5f-e8c4-47e9-9a93-5a753cbcd42b")
 		(property "Reference" "R8"
 			(at 148.59 72.3899 0)
@@ -13151,12 +13365,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT2K20"
 			(at 147.32 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805FT2K20/1760345"
+			(at 147.32 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13247,7 +13470,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "99bd2d54-1c12-45b3-b8bc-ba5204eb79d2")
 		(property "Reference" "R5"
@@ -13295,12 +13518,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT2M20"
 			(at 91.44 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT2M20/1757858"
+			(at 91.44 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13450,6 +13682,190 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x03_Socket")
+		(at 236.22 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a04a52c5-862e-4090-9bee-dc5929d930cd")
+		(property "Reference" "J9"
+			(at 237.49 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03_Socket"
+			(at 237.236 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-103-01-T-S/1112302"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-103-01-T-S"
+			(at 236.22 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "bba6b957-b037-45ca-92b7-aaf5802afd9d")
+		)
+		(pin "1"
+			(uuid "7dee6229-d999-4abf-84ac-c8f0b9c25e2a")
+		)
+		(pin "2"
+			(uuid "430c36bf-81ef-4d0b-80df-3b7e0b8fbd01")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 260.35 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a420628a-73b1-40d5-9755-83d36464c745")
+		(property "Reference" "J3"
+			(at 261.62 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 261.62 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-104-01-T-S/1112301"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-104-01-T-S"
+			(at 260.35 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "80564aae-107b-4d19-9260-09b9c845e569")
+		)
+		(pin "2"
+			(uuid "97aebc45-0e5c-45b4-9b64-d27894d190d2")
+		)
+		(pin "1"
+			(uuid "64d76bb8-30f0-4f45-b4d6-eeaf1b244a3c")
+		)
+		(pin "3"
+			(uuid "505d9643-35af-4e32-a97b-583e176e6811")
+		)
+		(instances
+			(project ""
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 64.77 34.29 90)
 		(unit 1)
@@ -13501,12 +13917,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 64.77 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 64.77 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13578,12 +14003,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "BZV55-C5V6,115"
 			(at 69.85 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/nexperia-usa-inc/BZV55-C5V6-115/1162883"
+			(at 69.85 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13747,6 +14181,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/smc-diode-solutions/1N4148W/6022450"
+			(at 180.34 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "20a6217a-f294-4c42-90a2-c6f59988e191")
 		)
@@ -13757,6 +14200,99 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 152.4 73.66 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af5c1589-958c-48cf-870c-e7e10a8b93ca")
+		(property "Reference" "J4"
+			(at 156.972 78.486 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 168.402 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-104-01-T-S/1112301"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-104-01-T-S"
+			(at 152.4 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "9ce6da8f-38c0-4a1f-9fb8-476b82bcf998")
+		)
+		(pin "2"
+			(uuid "6e07c707-e56a-4d21-84bd-6b28571672cc")
+		)
+		(pin "1"
+			(uuid "0824e745-d961-4de8-afe7-eff6e0b0c8bb")
+		)
+		(pin "3"
+			(uuid "613a6e11-1f37-4d36-a9dc-6f1bbeaa613b")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -13781,7 +14317,7 @@
 			)
 		)
 		(property "Value" "680k"
-			(at 230.124 71.882 0)
+			(at 228.854 71.882 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13816,12 +14352,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT680K"
 			(at 234.95 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT680K/1757826"
+			(at 234.95 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -13919,6 +14464,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/smc-diode-solutions/1N4148W/6022450"
+			(at 52.07 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9cbfc81a-0839-4602-a302-806cd87444ca")
 		)
@@ -13986,12 +14540,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT680K"
 			(at 43.18 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT680K/1757826"
+			(at 43.18 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14065,12 +14628,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  DMP3098L-7"
+		(property "MPN" " DMP3098L-7"
 			(at 171.45 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diodes-incorporated/DMP3098L-7/1964699"
+			(at 171.45 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14143,12 +14715,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14161,88 +14742,6 @@
 			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x04_Pin")
-		(at 152.4 73.66 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b52e466e-5ba2-4e27-9b48-af62f65162e1")
-		(property "Reference" "J4"
-			(at 150.622 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Conn_01x04_Pin"
-			(at 151.638 63.754 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 152.4 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "ff5dcd88-3ddf-431d-be15-83fd7c67f896")
-		)
-		(pin "3"
-			(uuid "95462d09-132e-4292-a99f-c89a5c2090ea")
-		)
-		(pin "1"
-			(uuid "91f433cf-c329-436f-b8c3-a5107f9da7d3")
-		)
-		(pin "2"
-			(uuid "d43b37fa-5824-4af1-9721-84a7a0c69a1f")
-		)
-		(instances
-			(project "water_sample_collector_iot_main"
-				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -14310,6 +14809,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stmicroelectronics/STLQ020C33R/10414574"
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "046a157a-b0d8-4ba9-a83b-beda31325ec6")
 		)
@@ -14341,7 +14849,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b79108f2-d55f-4799-beff-d4c546896f64")
 		(property "Reference" "H1"
 			(at 149.86 145.034 0)
@@ -14394,6 +14902,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 151.13 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14529,12 +15046,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B104KACNNNC"
 			(at 100.33 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B104KACNNNC/3886757"
+			(at 100.33 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14608,12 +15134,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "  DMP3098L-7"
+		(property "MPN" " DMP3098L-7"
 			(at 97.79 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/diodes-incorporated/DMP3098L-7/1964699"
+			(at 97.79 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -14686,12 +15221,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT330R"
 			(at 135.89 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT330R/1757830"
+			(at 135.89 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14828,12 +15372,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL21B104KACNNNC"
 			(at 63.5 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samsung-electro-mechanics/CL21B104KACNNNC/3886757"
+			(at 63.5 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -14852,33 +15405,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x08_Pin")
-		(at 149.86 106.68 0)
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 236.22 152.4 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c8ef8512-da31-405f-92c6-1e3aaea5de64")
-		(property "Reference" "J5"
-			(at 150.495 119.38 0)
+		(uuid "cc0fb335-23f8-4b12-a68e-01d42ef8795c")
+		(property "Reference" "J7"
+			(at 237.49 152.4001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x08_Pin"
-			(at 150.495 116.84 0)
+		(property "Value" "Conn_01x02_Socket"
+			(at 237.49 149.8601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
-			(at 149.86 106.68 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 236.22 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14887,7 +15442,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 106.68 0)
+			(at 236.22 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14895,8 +15450,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 149.86 106.68 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 236.22 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14904,42 +15459,34 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SAM1213-50-ND"
-			(at 149.86 106.68 0)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-102-01-T-S/1112303"
+			(at 236.22 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-102-01-T-S"
+			(at 236.22 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "97a8cf8d-4bcb-4bbf-8f22-4ac9cb76f437")
-		)
-		(pin "6"
-			(uuid "1801b1a0-1aea-4336-8564-dca9b6015908")
-		)
-		(pin "8"
-			(uuid "96c23025-ace7-4c1c-8f3f-6b0addbdf174")
-		)
-		(pin "4"
-			(uuid "2893cdcd-83b2-41cd-990b-a5d67106c409")
-		)
-		(pin "5"
-			(uuid "ee42f127-df20-4911-a381-f9c9da373e9c")
-		)
-		(pin "7"
-			(uuid "20fe6ce6-9f27-449f-912d-8d203d8bfe2e")
+			(uuid "ff79f9dc-8156-457b-a68b-b8da182c1aa8")
 		)
 		(pin "2"
-			(uuid "03ee7df0-5ab9-48aa-b598-17a0944f7506")
-		)
-		(pin "3"
-			(uuid "52c25fe9-861b-45f8-ae5c-281126fae86d")
+			(uuid "186edf43-fd77-4bc4-8917-2d9a487159b3")
 		)
 		(instances
-			(project ""
+			(project "water_sample_collector_iot_main"
 				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
-					(reference "J5")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -15000,12 +15547,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "A1921-ND"
+		(property "MPN" "640456-2"
 			(at 21.59 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/te-connectivity-amp-connectors/640456-2/109003"
+			(at 21.59 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15161,7 +15717,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board no)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d2b7acfd-b599-4a17-b40e-5ce175dc5fbc")
 		(property "Reference" "R6"
@@ -15209,12 +15765,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT680K"
 			(at 91.44 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT680K/1757826"
+			(at 91.44 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15287,12 +15852,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "0603N120J500CT"
 			(at 99.06 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/walsin-technology-corporation/0603N120J500CT/9354977"
+			(at 99.06 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15317,7 +15891,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "da0c55e0-5b91-409c-9fa1-c178d7781109")
 		(property "Reference" "H2"
 			(at 158.496 145.034 0)
@@ -15370,6 +15944,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 160.02 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15436,12 +16019,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 54.61 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 54.61 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15466,7 +16058,7 @@
 		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e2d1f380-6f3f-454c-99e1-4df945c7428c")
 		(property "Reference" "H3"
 			(at 167.386 145.288 0)
@@ -15519,6 +16111,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" ""
+			(at 168.91 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -15586,12 +16187,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SAM1213-50-ND"
+		(property "MPN" "SSW-114-01-T-S"
 			(at 195.58 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-114-01-T-S/1112291"
+			(at 195.58 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "A5"
@@ -15739,12 +16349,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 163.83 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 163.83 114.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15817,12 +16436,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805JT330R"
 			(at 74.93 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/RMCF0805JT330R/1757830"
+			(at 74.93 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -15903,6 +16531,15 @@
 				)
 			)
 		)
+		(property "Link" "https://www.digikey.de/de/products/detail/cda-zhifengwei-technology/CB5R5224CF-ZJ/19558105"
+			(at 133.35 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6466e110-e466-474a-86c6-f5e8e984e002")
 		)
@@ -15970,12 +16607,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 193.04 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 193.04 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16045,12 +16691,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16200,6 +16855,100 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Socket")
+		(at 124.46 104.14 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f0ebc8f6-1955-4011-80d6-d22980aebebb")
+		(property "Reference" "J2"
+			(at 123.19 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x04_Socket"
+			(at 135.382 112.014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/samtec-inc/SSW-104-01-T-S/1112301"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SSW-104-01-T-S"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "704ee7cb-9f66-42df-9da6-4f77ec0f6179")
+		)
+		(pin "2"
+			(uuid "ac399c20-f312-4ac2-b30c-e6de583566c0")
+		)
+		(pin "1"
+			(uuid "6acb20d3-f476-47ce-bdac-b95af98b0752")
+		)
+		(pin "3"
+			(uuid "85eb7d91-cb5f-475c-8268-5cf3070a7f7b")
+		)
+		(instances
+			(project "water_sample_collector_iot_main"
+				(path "/046a1d46-315c-43d3-9a0a-ff221917f6d1"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 113.03 78.74 0)
 		(unit 1)
@@ -16320,12 +17069,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 43.18 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -16395,12 +17153,21 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "RMCF0805FT10K0"
 			(at 226.06 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "Link" "https://www.digikey.de/de/products/detail/stackpole-electronics-inc/rmcf0805ft10k0/1760676"
+			(at 226.06 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
