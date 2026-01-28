@@ -15520,7 +15520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "TE Connectivity:CONN2_640456-2_TEC"
 			(at 21.59 42.926 90)
 			(effects
 				(font
