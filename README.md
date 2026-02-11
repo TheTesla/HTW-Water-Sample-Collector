@@ -74,7 +74,14 @@ The following files are the most important subset needed to build and use the me
 ## Author
 
 Stefan Helmert <stefan.helmert@htw-dresden.de>
+Hochschule für Technik und Wirtschaft Dresden -- University of Applied Sciences
+Friedrich-List-Platz 1
+01069 Dresden
+Germany
 
+## Aknowledgement
+
+This work was funded by Volkswagen Foundation under grant number 9C858.
 
 ## Appendix
 
