@@ -13,7 +13,7 @@ from fuzzyometry import combinations as cmb
 def f(p):
     x, y, z, par = p
 
-    r_chamfer = 1
+    r_chamfer = 1.
 
     tol = 0.5
     d_slot = 1.8
@@ -77,6 +77,6 @@ def f(p):
     return True
 
 if __name__ == "__main__":
-    render.renderAndSave(f, "build/frame.stl", 0.3)
+    render.renderAndSave(f, "build/frame", 0.3)
 
 

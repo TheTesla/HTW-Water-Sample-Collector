@@ -9,7 +9,7 @@ license = {text = "CERN-OHL-1.2"}
 readme = "README.md"
 requires-python = ">=3.11, <4.0"
 dependencies = [
-    "xyzcad (>=0.7.1,<0.8.0)",
+    "xyzcad (>=0.7.3,<0.8.0)",
     "fuzzyometry (>=0.0.6,<0.0.7)"
 ]
 
