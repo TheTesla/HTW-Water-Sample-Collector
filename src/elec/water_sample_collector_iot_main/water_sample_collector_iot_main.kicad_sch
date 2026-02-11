@@ -9697,7 +9697,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "-"
 			(at 177.8 151.13 0)
 			(effects
 				(font
@@ -9705,7 +9705,7 @@
 				)
 			)
 		)
-		(property "Link" ""
+		(property "Link" "-"
 			(at 177.8 151.13 0)
 			(effects
 				(font
@@ -14896,7 +14896,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "-"
 			(at 151.13 151.13 0)
 			(effects
 				(font
@@ -14904,7 +14904,7 @@
 				)
 			)
 		)
-		(property "Link" ""
+		(property "Link" "-"
 			(at 151.13 151.13 0)
 			(effects
 				(font
@@ -15938,7 +15938,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "-"
 			(at 160.02 151.13 0)
 			(effects
 				(font
@@ -15946,7 +15946,7 @@
 				)
 			)
 		)
-		(property "Link" ""
+		(property "Link" "-"
 			(at 160.02 151.13 0)
 			(effects
 				(font
@@ -16105,7 +16105,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "-"
 			(at 168.91 151.13 0)
 			(effects
 				(font
@@ -16113,7 +16113,7 @@
 				)
 			)
 		)
-		(property "Link" ""
+		(property "Link" "-"
 			(at 168.91 151.13 0)
 			(effects
 				(font
