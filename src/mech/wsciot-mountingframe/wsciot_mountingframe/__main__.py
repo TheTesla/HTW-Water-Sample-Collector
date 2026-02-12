@@ -5,6 +5,7 @@ from xyzcad import render
 from numba import njit
 from fuzzyometry import bodies as bd
 from fuzzyometry import combinations as cmb
+import pathlib
 
 
 
@@ -77,6 +78,7 @@ def f(p):
     return True
 
 if __name__ == "__main__":
-    render.renderAndSave(f, "build/frame", 0.3)
+    pathlib.Path("../../../gen/mech/wsciot-mountingframe/").mkdir(parents=True, exist_ok=True)
+    render.renderAndSave(f, "../../../gen/mech/wsciot-mountingframe/frame", 0.3)
 
 

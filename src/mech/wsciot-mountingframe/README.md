@@ -7,8 +7,8 @@ To create the STL file you need to install Python and Poetry. After Installing t
 
 ```bash
 poetry install
-mkdir build
 poetry run python3 wsciot_mountingframe
 ```
 
+The generated files `frame.stl` and `frame.obj` will be placed in `gen/mech/wsciot-mountingframe/`.
 
