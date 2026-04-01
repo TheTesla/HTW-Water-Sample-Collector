@@ -3,7 +3,7 @@
 
 This construction is written in Python using distance field based implicit surfaces.
 
-To create the STL file you need to install Python and Poetry. After Installing these tools, run in command line (you must be in the director, where this README.md is):
+To create the STL file you need to install Python and Poetry. After Installing these tools, run in command line (you must be in the directory, where this README.md is):
 
 ```bash
 poetry install
