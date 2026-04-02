@@ -18,5 +18,5 @@ The power consumption is very low. There is no need to disconnect the battery. I
 
 ## Message Forwarding Server
 
-It forwards the notification to an email inbox. The configuration is described in `/src/software/wsciot/README.md`.
+It forwards the notification to an email inbox. The configuration is described in [/src/software/wsciot/README.md](/src/software/wsciot/README.md).
 
