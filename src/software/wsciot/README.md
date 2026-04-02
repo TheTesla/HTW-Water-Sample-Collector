@@ -19,6 +19,8 @@ SMTP_PASSWORD = "MyP@S5vV0rD"
 
 ## Run
 
+It is recommendet to run the server on a Linux system. Windows may work too, but the installation of Python and Poetry my be difficult.
+
 To run the server, dependencies must be installed first. You can use [Poetry](https://python-poetry.org/docs/) to achieve this:
 
 ```bash
@@ -36,6 +38,7 @@ In the virtual environment, you can also run:
 ```bash
 python3 -m wsciot
 ```
+
 
 
 ## Author
