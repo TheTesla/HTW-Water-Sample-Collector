@@ -19,9 +19,24 @@ SMTP_PASSWORD = "MyP@S5vV0rD"
 
 ## Run
 
+To run the server, dependencies must be installed first. You can use [Poetry](https://python-poetry.org/docs/) to achieve this:
+
+```bash
+poetry install
+```
+
+And start the server using:
+
+```bash
+poetry run python3 wsciot
+```
+
+In the virtual environment, you can also run:
+
 ```bash
 python3 -m wsciot
 ```
+
 
 ## Author
 
