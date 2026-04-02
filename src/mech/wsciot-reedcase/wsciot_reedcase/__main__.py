@@ -16,20 +16,20 @@ def f(p):
 
     tol = 0.2
 
-    wo = 9
-    lo = 20
+    wo = 9.5
+    lo = 25 # 20
     ho = 13
 
-    wr = 2.8 + tol
-    lr = 14.3 + tol +2
-    hr = 3.2 + 2.9 + tol
+    wr = 3.3 + tol # 2.8 + tol
+    lr = 17.3 + tol + 2 # 14.3 + tol +2
+    hr = 4.2 + 2.9 + tol #3.2 + 2.9 + tol
     zr = -1
 
-    r_shaft = 3.5
-    h_shaft = 2.
-    ds_shaft = 4
+    r_shaft = 3.65
+    h_shaft = 1.9
+    ds_shaft = 3
     l_shaft = 15
-    r_hole = 1.9 + tol
+    r_hole = 4.5/2 + tol
 
     r_chamfer = 1.
     ri_chamfer = 0.1    
