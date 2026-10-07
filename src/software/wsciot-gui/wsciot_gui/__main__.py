@@ -6,9 +6,8 @@
 
 Normal mode:  python -m wsciot_gui        (or wsciot-gui.exe)
 Server mode:  python -m wsciot_gui --server
-              (or wsciot-gui.exe --server, used by the portable app to
-              launch the bundled original wsciot server as a child
-              process; the server code itself stays unmodified)
+              (fallback only; the portable app uses the dedicated
+              wsciot-server.exe instead - see build_portable.py)
 """
 import sys
 

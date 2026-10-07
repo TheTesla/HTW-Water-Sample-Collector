@@ -71,9 +71,17 @@ python build_portable.py
 
 Ergebnis: `dist/wsciot-gui-portable.zip`. Nutzer entpacken den Ordner an
 einen beliebigen Ort und starten `wsciot-gui.exe`. Die Konfiguration
-(`.env`) entsteht per "Save" neben der exe, der Server läuft als
-Kindprozess der exe (`wsciot-gui.exe --server` führt das unveränderte
-Original-Server-Paket aus, das mit eingebettet ist).
+(`.env`) entsteht per "Save" neben der exe.
+
+Der portable Ordner enthält **zwei Programme**:
+
+* `wsciot-gui.exe` - die GUI
+* `wsciot-server.exe` - der Server (startet das unveränderte
+  Original-Server-Paket; hat keinen GUI-Code und kann deshalb nie ein
+  zweites Fenster öffnen). Die GUI startet ihn als Kindprozess; er kann
+  auch von Hand gestartet werden.
+
+Beide Dateien gehören zusammen und müssen im selben Ordner liegen.
 
 Hinweis: Der erste Start nach dem Entpacken kann durch Windows SmartScreen
 verzögert werden ("Weitere Informationen" -> "Trotzdem ausführen").

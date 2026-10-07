@@ -49,10 +49,18 @@ def is_frozen():
     return getattr(sys, "frozen", False)
 
 
+def server_exe_path():
+    """Path of wsciot-server.exe in the portable app (None outside it)."""
+    if not is_frozen():
+        return None
+    exe = Path(sys.executable).parent / "wsciot-server.exe"
+    return exe if exe.is_file() else None
+
+
 def default_env_path():
     """The .env file of the wsciot server, derived from the server directory.
 
-    Portable app: the .env sits next to the executable.
+    Portable app: the .env sits next to the GUI executable.
     Source run: derived from the server package location (never a
     machine-specific absolute path).
     """
@@ -182,13 +190,30 @@ def start_server(server_dir, python_exe, log_path):
     if sys.platform == "win32":
         creationflags = subprocess.CREATE_NEW_PROCESS_GROUP | subprocess.DETACHED_PROCESS
     log_file = open(log_path, "a", encoding="utf-8", buffering=1)
+    if is_frozen():
+        # portable app: launch the dedicated wsciot-server.exe that ships
+        # next to the GUI exe (two separate programs - the server exe has
+        # no GUI code path, so it can never open a second window).
+        server_exe = server_exe_path()
+        if server_exe is None:
+            raise FileNotFoundError(
+                "wsciot-server.exe wurde nicht gefunden. Bitte den gesamten "
+                "entpackten Ordner verwenden (wsciot-gui.exe und "
+                "wsciot-server.exe gehoeren zusammen).")
+        cmd = [str(server_exe)]
+    else:
+        cmd = [str(python_exe), "-m", SERVER_PACKAGE]
     proc = subprocess.Popen(
-        [str(python_exe), "-m", SERVER_PACKAGE],
+        cmd,
         cwd=str(server_dir),
         stdout=log_file,
         stderr=subprocess.STDOUT,
         stdin=subprocess.DEVNULL,
         creationflags=creationflags,
+        env={**os.environ, "PYTHONUNBUFFERED": "1"},
+        # the child's stdout is a file, not a console: without
+        # PYTHONUNBUFFERED the child's Python block-buffers its output and
+        # the GUI log stays empty for a long time
     )
     # Detach from our side, so the child is NOT killed when this process ends
     try:

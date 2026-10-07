@@ -7,13 +7,19 @@
 Usage (from src/software/wsciot-gui, with Python 3.13):
     python build_portable.py
 
-Produces:
-    dist/wsciot-gui/            the portable app folder (run wsciot-gui.exe)
-    dist/wsciot-gui-portable.zip  the same folder zipped for distribution
+Produces TWO executables in one folder (dist/wsciot-gui):
+    wsciot-gui.exe     the GUI (tkinter, onedir bundle)
+    wsciot-server.exe  the server (runs the ORIGINAL, unmodified wsciot
+                       server module; one-file bundle, no GUI code path)
+
+The GUI starts wsciot-server.exe as a child. Two separate programs mean
+the server process can never open a GUI window, and the process list
+shows clearly which is which.
+
+Also written:
+    dist/wsciot-gui-portable.zip   the folder zipped for distribution
 
 Requires: pip install pyinstaller
-The wsciot server package (../wsciot) is bundled UNMODIFIED and executed
-via the exe's --server mode (see wsciot_gui/__main__.py).
 """
 import shutil
 import subprocess
@@ -25,6 +31,7 @@ HERE = Path(__file__).resolve().parent
 SERVER_PKG_DIR = HERE.parent / "wsciot"
 DIST = HERE / "dist"
 APP_NAME = "wsciot-gui"
+SERVER_NAME = "wsciot-server"
 APP_DIR = DIST / APP_NAME
 ZIP_PATH = DIST / f"{APP_NAME}-portable.zip"
 
@@ -41,6 +48,12 @@ def _find_server_venv_site_packages():
     return None
 
 
+def _pyinstaller(args):
+    cmd = [sys.executable, "-m", "PyInstaller", "--noconfirm", "--clean"] + args
+    print("Running:", " ".join(cmd))
+    subprocess.run(cmd, cwd=HERE, check=True)
+
+
 def main():
     if not (SERVER_PKG_DIR / "wsciot" / "__main__.py").exists():
         sys.exit(f"wsciot server package not found at {SERVER_PKG_DIR}")
@@ -52,29 +65,34 @@ def main():
         sys.exit("no poetry venv with paho-mqtt found - cannot bundle deps")
     print("Bundling dependencies from:", sp)
 
-    cmd = [
-        sys.executable, "-m", "PyInstaller",
-        "--noconfirm",
-        "--clean",
-        "--noconsole",                       # GUI app: no console window
-        "--name", APP_NAME,
-        # make the unmodified server package importable inside the bundle
-        "--paths", str(SERVER_PKG_DIR),
-        "--paths", str(sp),
-        "--hidden-import", "wsciot",
-        "--hidden-import", "wsciot.__main__",
-        "--hidden-import", "paho.mqtt.client",
-        "--hidden-import", "dotenv",
-        str(HERE / "wsciot_gui" / "__main__.py"),
-    ]
-    print("Running:", " ".join(cmd))
-    subprocess.run(cmd, cwd=HERE, check=True)
+    common = ["--noconsole",
+              "--paths", str(SERVER_PKG_DIR),
+              "--paths", str(sp),
+              "--hidden-import", "wsciot",
+              "--hidden-import", "wsciot.__main__",
+              "--hidden-import", "paho.mqtt.client",
+              "--hidden-import", "dotenv"]
 
-    # sanity: exe exists
-    exe = APP_DIR / f"{APP_NAME}.exe"
-    if not exe.exists():
-        sys.exit(f"build failed: {exe} missing")
+    # 1) GUI app (onedir folder bundle)
+    _pyinstaller(common + ["--name", APP_NAME,
+                           str(HERE / "wsciot_gui" / "__main__.py")])
+    gui_exe = APP_DIR / f"{APP_NAME}.exe"
+    if not gui_exe.exists():
+        sys.exit(f"build failed: {gui_exe} missing")
+
+    # 2) server app (single-file exe; onefile output lands in DIST root)
+    _pyinstaller(common + ["--onefile", "--name", SERVER_NAME,
+                           str(HERE / "wsciot_gui" / "_server_entry.py")])
+    server_src = DIST / f"{SERVER_NAME}.exe"
+    if not server_src.exists():
+        sys.exit(f"build failed: {server_src} missing")
+
+    # move the server exe next to the GUI exe
+    server_exe = APP_DIR / f"{SERVER_NAME}.exe"
+    shutil.move(str(server_src), server_exe)
     print(f"\nPortable app folder: {APP_DIR}")
+    print(f"  {gui_exe.name}     (GUI)")
+    print(f"  {server_exe.name}  (server, started by the GUI)")
 
     # distribution zip
     if ZIP_PATH.exists():
