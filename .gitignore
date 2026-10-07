@@ -4,3 +4,5 @@ arduino_secrets.h
 .env
 __pycache__/
 dist/
+build/
+*.spec
