@@ -157,14 +157,11 @@ def write_env(path, values):
 
     The original server reads port values via ``creds.get("MQTT_PORT",
     1883)`` and passes them straight to ``client.connect``, which requires
-    an ``int``. python-dotenv always yields strings, so a port line in the
-    .env crashes the original server. Ports are therefore only written
-    when they differ from the server's built-in defaults (empty field or
-    default value -> line omitted, server default applies).
-
-    A ``{TTN_APP_ID}`` placeholder inside MQTT_TOPIC is resolved here,
-    because the original server only builds that default topic when the
-    MQTT_TOPIC line is absent - it never substitutes placeholders itself.
+    an ``int``. python-dotenv always yields strings, so an ACTIVE port
+    line in the .env crashes the original server. Default ports are
+    therefore written as COMMENT lines (documenting the effective value
+    without breaking the server); custom ports are written like any
+    other parameter.
     """
     port_defaults = PORT_DEFAULTS
     ttn_app_id = values.get("TTN_APP_ID", "").strip()
@@ -172,8 +169,12 @@ def write_env(path, values):
              "# edited by the wsciot GUI launcher", ""]
     for key, _label, _secret in ENV_FIELDS:
         val = values.get(key, "").strip()
-        if key in port_defaults and (not val or val == port_defaults[key]):
-            continue
+        if key in port_defaults:
+            if not val or val == port_defaults[key]:
+                # default port: document it, but keep the line inactive
+                lines.append(f"# {key} = {val or port_defaults[key]}  "
+                             "(Standardwert, nicht aktiv)")
+                continue
         if key == "MQTT_TOPIC" and val:
             val = val.replace("{TTN_APP_ID}", ttn_app_id)
         lines.append(f'{key} = "{val}"')
@@ -273,17 +274,37 @@ def send_test_email(values, timeout=30):
     return email_to
 
 
-def stop_server(pid):
-    """Terminate the server process tree (server first, then children)."""
+def stop_server(pid, on_done=None):
+    """Terminate the server process tree (server first, then children).
+
+    Non-blocking: taskkill runs detached and its completion is reported
+    via ``on_done(killed: bool)`` - the callback runs in a listener
+    thread and must NOT touch the GUI (the GUI polls the result instead,
+    see gui.stop_server which uses a queue + after()).
+    """
     if sys.platform == "win32":
-        subprocess.run(["taskkill", "/PID", str(pid), "/T", "/F"],
-                       capture_output=True)
-    else:
-        import signal
-        try:
-            os.kill(pid, signal.SIGTERM)
-        except ProcessLookupError:
-            pass
+        proc = subprocess.Popen(
+            ["taskkill", "/PID", str(pid), "/T", "/F"],
+            stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            stdin=subprocess.DEVNULL,
+        )
+
+        def _wait_done():
+            killed = proc.wait(timeout=30) == 0
+            if on_done is not None:
+                on_done(killed)
+
+        if on_done is not None:
+            import threading
+            threading.Thread(target=_wait_done, daemon=True).start()
+        return proc
+    import signal
+    try:
+        os.kill(pid, signal.SIGTERM)
+    except ProcessLookupError:
+        pass
+    if on_done is not None:
+        on_done(True)
 
 
 def alive(pid):

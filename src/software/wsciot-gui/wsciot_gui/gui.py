@@ -27,6 +27,7 @@ from wsciot_gui import logic
 APP_TITLE = "Wassersammler IoT - Server Verwaltung"
 REFRESH_MS = 2000        # status/health polling interval
 LOG_POLL_MS = 400        # console log tail interval
+STOP_POLL_MS = 150       # server-stop completion polling interval
 
 
 class GuiLauncher(tk.Tk):
@@ -40,6 +41,7 @@ class GuiLauncher(tk.Tk):
         self.env_path = logic.default_env_path()
         self.proc = None                    # Popen handle if we started it
         self._log_pos = 0                   # read position in the server log
+        self._stopping = False              # True while taskkill runs
         self.status_var = tk.StringVar(value="unbekannt")
         self.log_path = Path.home() / ".wsciot_gui_server.log"
 
@@ -364,6 +366,12 @@ class GuiLauncher(tk.Tk):
         # note: the server needs a few seconds until the MQTT connection is up
 
     def stop_server(self):
+        """Stop the server without blocking the GUI.
+
+        taskkill runs detached (logic.stop_server); this handler only
+        starts it and polls the completion queue via after() - all GUI
+        access stays in the main thread.
+        """
         pid = self._running_pid()
         if not pid:
             messagebox.showinfo("Nicht gestartet", "Der Server läuft nicht.")
@@ -372,14 +380,33 @@ class GuiLauncher(tk.Tk):
                                    "Server wirklich beenden? Es werden dann keine "
                                    "Benachrichtigungen mehr per E-Mail verschickt!"):
             return
-        logic.stop_server(pid)
-        self.proc = None
-        if self.server_dir:
-            try:
-                Path(self.server_dir, ".wsciot_gui.pid").unlink()
-            except OSError:
-                pass
-        self._log_append("[GUI] Server gestoppt.\n")
+        self.stop_q = queue.Queue()
+        logic.stop_server(pid, on_done=lambda killed: self.stop_q.put(killed))
+        self._log_append(f"[GUI] Beende Server (PID {pid})...\n")
+        self._stopping = True
+        self.stop_btn.config(state="disabled")
+        self.start_btn.config(state="disabled")
+        self.after(STOP_POLL_MS, self._poll_stop_queue)
+
+    def _poll_stop_queue(self):
+        """Timer callback (main thread): show the stop result."""
+        try:
+            killed = self.stop_q.get_nowait()
+        except queue.Empty:
+            self.after(STOP_POLL_MS, self._poll_stop_queue)
+            return
+        self._stopping = False
+        if killed:
+            self.proc = None
+            if self.server_dir:
+                try:
+                    Path(self.server_dir, ".wsciot_gui.pid").unlink()
+                except OSError:
+                    pass
+            self._log_append("[GUI] Server gestoppt.\n")
+        else:
+            self._log_append("[GUI] Server konnte nicht beendet werden "
+                             "(Prozess evtl. bereits beendet).\n")
         self._refresh_status()
 
     def _running_pid(self):
